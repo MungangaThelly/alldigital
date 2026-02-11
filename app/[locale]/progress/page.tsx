@@ -1,38 +1,54 @@
 "use client";
 
-import { use } from "react";
+import { use, useState, useEffect } from "react";
 import { FaTrophy, FaStar, FaCheckCircle, FaClock } from "react-icons/fa";
 import { dateLocales, getDictionary, getLocaleOrDefault } from "@/lib/i18n";
 import { getLessons } from "@/lib/lessons";
+import { useUserProgress } from "@/lib/useUserProgress";
 
 export default function ProgressPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = use(params);
   const locale = getLocaleOrDefault(localeParam);
   const t = getDictionary(locale);
   const lessons = getLessons(locale);
+  const { progress, isLoaded } = useUserProgress();
+  const [mounted, setMounted] = useState(false);
 
-  // Mock data - would come from database/API
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || !isLoaded) {
+    return (
+      <div className="container mx-auto px-4 py-8 text-center">
+        <p className="text-gray-500">Loading...</p>
+      </div>
+    );
+  }
+
+  // Get completed lesson details for the progress display
+  const completedLessonIds = progress.completedLessons;
+  const completedLessonDetails = lessons.filter(lesson => completedLessonIds.includes(lesson.id));
+  
   const mockProgress = {
-    completedLessons: 1,
+    completedLessons: completedLessonIds.length,
     totalLessons: lessons.length,
-    points: 100,
-    timeSpent: 35, // minutes
+    points: progress.points,
+    timeSpent: completedLessonIds.length * 10, // Estimate: 10 minutes per lesson
     achievements: [
       {
         id: "first-lesson",
         title: t.progress.achievements,
         description: t.progress.statsCompleted,
         icon: "🎉",
-        earnedAt: new Date("2026-02-09"),
+        earnedAt: new Date(),
       },
     ],
-    recentActivity: [
-      {
-        lessonTitle: lessons[0]?.title || "",
-        completedAt: new Date("2026-02-09"),
-        points: 100,
-      },
-    ],
+    recentActivity: completedLessonDetails.slice(-3).map(lesson => ({
+      lessonTitle: lesson.title,
+      completedAt: new Date(),
+      points: lesson.points,
+    })),
   };
 
   const completionPercentage = Math.round(

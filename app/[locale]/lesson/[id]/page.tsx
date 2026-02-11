@@ -1,7 +1,8 @@
 "use client";
 
-import { use, useState } from "react";
+import { use, useState, useEffect } from "react";
 import { getLessonById } from "@/lib/lessons";
+import { useUserProgress } from "@/lib/useUserProgress";
 import { FaArrowLeft, FaArrowRight, FaCheckCircle, FaLightbulb } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import PhoneSimulator from "@/components/interactive/PhoneSimulator";
@@ -20,6 +21,14 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const { completeLesson, isLoaded } = useUserProgress();
+
+  // Save lesson completion to localStorage when user completes the lesson
+  useEffect(() => {
+    if (completed && lesson && isLoaded) {
+      completeLesson(lesson.id, lesson.points);
+    }
+  }, [completed, lesson, completeLesson, isLoaded]);
 
   if (!lesson) {
     return (

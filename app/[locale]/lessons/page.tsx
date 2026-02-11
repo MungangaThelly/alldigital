@@ -1,16 +1,11 @@
 "use client";
 
-import { use } from "react";
+import { use, useState, useEffect } from "react";
 import { getLessons, getCategoryMeta, getDifficultyLabels } from "@/lib/lessons";
+import { useUserProgress } from "@/lib/useUserProgress";
 import Link from "next/link";
 import { FaClock, FaStar, FaLock, FaCheckCircle } from "react-icons/fa";
 import { getDictionary, getLocaleOrDefault, withLocale } from "@/lib/i18n";
-
-// Mock user progress - in production this would come from a database/API
-const mockUserProgress = {
-  completedLessons: ["sms-basics"],
-  points: 100,
-};
 
 export default function LessonsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = use(params);
@@ -19,6 +14,24 @@ export default function LessonsPage({ params }: { params: Promise<{ locale: stri
   const lessons = getLessons(locale);
   const categoryMeta = getCategoryMeta(locale);
   const difficultyLabels = getDifficultyLabels(locale);
+  
+  const { progress, isLoaded } = useUserProgress();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted || !isLoaded) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center">
+          <p className="text-gray-500">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -29,7 +42,7 @@ export default function LessonsPage({ params }: { params: Promise<{ locale: stri
         <div className="mt-6 inline-flex items-center gap-2 bg-primary-100 border-2 border-primary-300 px-6 py-3 rounded-lg">
           <FaStar className="text-primary-600 w-6 h-6" />
           <span className="text-xl font-semibold text-gray-900">
-            {t.lessons.yourPoints}: {mockUserProgress.points} {t.lessons.pointsUnit}
+            {t.lessons.yourPoints}: {progress.points} {t.lessons.pointsUnit}
           </span>
         </div>
       </div>
@@ -49,9 +62,9 @@ export default function LessonsPage({ params }: { params: Promise<{ locale: stri
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {categoryLessons.map((lesson) => {
-                  const isCompleted = mockUserProgress.completedLessons.includes(lesson.id);
+                  const isCompleted = progress.completedLessons.includes(lesson.id);
                   const isLocked = lesson.requiredLessons?.some(
-                    (reqId) => !mockUserProgress.completedLessons.includes(reqId)
+                    (reqId) => !progress.completedLessons.includes(reqId)
                   );
 
                   return (
