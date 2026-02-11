@@ -135,7 +135,7 @@ npm start
 ## 🤝 Support
 
 For questions or issues:
-- Email: hjalp@tillsammansdigitalt.se
+- Email: help@nuhar.se
 - Phone: 070-481 03 77
 
 ## 📄 License
