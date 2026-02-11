@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nuhar.se"
+        }
+      ],
+      "destination": "https://nuhar.se/:path*",
+      "permanent": true
+    }
+  ]
+}
