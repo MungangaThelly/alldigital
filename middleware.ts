@@ -6,13 +6,6 @@ const PUBLIC_FILE = /\.[^/]+$/;
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Redirect www to non-www
-  if (request.headers.get("host")?.startsWith("www.")) {
-    const url = request.nextUrl.clone();
-    url.host = url.host.replace("www.", "");
-    return NextResponse.redirect(url, 301);
-  }
-
   if (pathname.startsWith("/_next") || pathname.startsWith("/api") || PUBLIC_FILE.test(pathname)) {
     return NextResponse.next();
   }
