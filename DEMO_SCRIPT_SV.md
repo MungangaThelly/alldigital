@@ -23,7 +23,7 @@ Vi fokuserar på de svenska tjänster du faktiskt använder: BankID, Swish, 1177
 ## Scene 3: Lektioner (0:45-1:30)
 **[Navigate to Lessons page]**
 
-"Låt oss börja med lektionerna. Vi har sju kurser som bygger på varandra. Börja enkelt och arbeta dig uppåt i din egen takt."
+"Låt oss börja med lektionerna. Vi har tolv kurser som bygger på varandra. Börja enkelt och arbeta dig uppåt i din egen takt."
 
 **[Show lessons list]**
 

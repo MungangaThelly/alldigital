@@ -81,7 +81,7 @@
 
 ## Demo Flow (Suggested)
 1. Homepage in Swedish
-2. Lessons list (7 lessons)
+2. Lessons list (12 lessons)
 3. Open a lesson and play narration
 4. Interactive simulation
 5. Progress page with badges

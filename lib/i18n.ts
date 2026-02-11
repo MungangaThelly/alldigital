@@ -399,7 +399,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         {
           id: "digital-master",
           title: "Digital expert",
-          description: "Slutförde alla 7 lektioner",
+          description: "Slutförde alla 12 lektioner",
           icon: "👑",
           requirement: "Complete all lessons",
         },
@@ -719,7 +719,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         {
           id: "digital-master",
           title: "Digital champion",
-          description: "Completed all 7 lessons",
+          description: "Completed all 12 lessons",
           icon: "👑",
           requirement: "Complete all lessons",
         },
