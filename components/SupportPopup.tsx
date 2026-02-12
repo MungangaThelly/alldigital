@@ -67,6 +67,7 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
       }}>
         <h2>Stöd oss med Swish</h2>
         <p>{message}</p>
+        <p style={{ fontWeight: "bold", margin: "12px 0 0 0" }}>Du väljer själv beloppet!</p>
         <img src={qrCodeUrl} alt="Swish QR-kod" style={{ width: 180, margin: "16px auto" }} />
         <p style={{ fontWeight: "bold", fontSize: 18 }}>{swishNumber}</p>
         <div style={{ marginTop: 16 }}>
