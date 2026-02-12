@@ -48,6 +48,84 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "safe-social-networks",
+      title: "Sociala nätverk med trygghet",
+      description: "Många äldre vill använda sociala medier, men är osäkra. Lär dig skapa konto, logga in, sekretessinställningar, dela foto/meddelanden tryggt och undvika scam-kontakter.",
+      category: "communication",
+      difficulty: "intermediate",
+      duration: 20,
+      points: 180,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Skapa konto och logga in",
+          content: "Steg-för-steg hur du skapar ett konto på t.ex. Facebook eller Instagram och loggar in.",
+          hint: "Använd en stark lösenord och skriv upp det på ett säkert ställe."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Grundläggande sekretessinställningar",
+          content: "Så ställer du in vem som kan se din profil, dina bilder och dina inlägg. Gå igenom sekretessmenyn och välj det som känns tryggt.",
+          hint: "Du kan alltid ändra inställningarna senare."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Bästa praxis för att dela foto och meddelanden",
+          content: "Tips för att dela bilder och meddelanden tryggt: Dela bara med personer du känner, undvik att lägga ut känslig information.",
+          hint: "Fråga någon om du är osäker på vad du ska dela."
+        },
+        {
+          id: "step-4",
+          type: "instruction",
+          title: "Undvika scam-kontakter",
+          content: "Så känner du igen och undviker falska kontakter och bedrägerier på sociala medier. Acceptera bara vänförfrågningar från personer du känner.",
+          hint: "Blockera och rapportera misstänkta konton."
+        }
+      ]
+    },
+    {
+      id: "digital-meetings",
+      title: "Videokonferens & Digitala möten",
+      description: "Populärt för social kontakt och telemedicin. Lär dig använda Zoom, Teams, FaceTime, bjuda in och ansluta, ställa in mikrofon och kamera, och bästa praxis för digitala möten.",
+      category: "communication",
+      difficulty: "intermediate",
+      duration: 20,
+      points: 180,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Använda Zoom, Teams och FaceTime",
+          content: "Så startar du och ansluter till ett digitalt möte med Zoom, Teams eller FaceTime.",
+          hint: "Du behöver en internetuppkoppling och ibland ett konto."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Bjuda in och ansluta",
+          content: "Hur du bjuder in andra till ett möte och ansluter själv. Skicka en länk eller möteskod.",
+          hint: "Du kan bjuda in via e-post eller SMS."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Ställa in mikrofon och kamera",
+          content: "Så kontrollerar du att mikrofon och kamera fungerar och är rätt inställda.",
+          hint: "Testa innan mötet börjar."
+        },
+        {
+          id: "step-4",
+          type: "instruction",
+          title: "Bästa praxis för digitala möten",
+          content: "Tips för att delta tryggt och effektivt: Stäng av mikrofon när du inte pratar, använd kamera om du vill, och respektera andra deltagare.",
+          hint: "Var gärna i en lugn miljö och ha bra ljus."
+        }
+      ]
+    },
+    {
       id: "smartphones-apps-indepth",
       title: "Smartphones & appar (Fördjupning)",
       description: "Lär dig mer om inställningar, backup, lagring och molntjänster för din smartphone.",
