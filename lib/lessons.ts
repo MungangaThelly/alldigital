@@ -48,6 +48,48 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "advanced-digital-security",
+      title: "Avancerad digital säkerhet (Certifierad nivå)",
+      description: "Lär dig känna igen bedrägerier, skapa säkra lösenord och förstå nätfiske och andra online-risker.",
+      category: "security",
+      difficulty: "advanced",
+      duration: 30,
+      points: 300,
+      requiredLessons: ["scam-awareness", "password-safety"],
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Känna igen bedrägerier",
+          content: "Lär dig identifiera avancerade bedrägerier via SMS, e-post och samtal. Se upp för oväntade länkar och krav på snabba beslut.",
+          hint: "Dubbelkolla alltid avsändaren och fråga någon om du är osäker."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Säkra lösenord",
+          content: "Använd unika och starka lösenord för varje tjänst. Aktivera tvåfaktorsautentisering där det är möjligt.",
+          hint: "En lösenordshanterare kan hjälpa dig hålla koll på alla lösenord."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Nätfiske och online-risker",
+          content: "Nätfiske innebär att bedragare försöker lura dig att lämna ut information via falska webbsidor eller e-post. Kontrollera alltid webbadressen och klicka inte på misstänkta länkar.",
+          hint: "Skriv in webbadressen själv istället för att klicka på länkar i e-post."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Testa din kunskap",
+          content: "Vad är ett tecken på nätfiske?",
+          validation: {
+            correctAnswer: "Oväntade länkar och krav på att lämna ut information"
+          }
+        }
+      ]
+    },
+    {
       id: "digital-photos-memories",
       title: "Digitala foton & minnen",
       description: "Lär dig skanna gamla foton, organisera bilder och dela med familjen.",
@@ -592,6 +634,48 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
   ],
   en: [
+                {
+                  id: "advanced-digital-security",
+                  title: "Advanced Digital Security (Certified Level)",
+                  description: "Learn to recognize scams, create secure passwords, and understand phishing and other online risks.",
+                  category: "security",
+                  difficulty: "advanced",
+                  duration: 30,
+                  points: 300,
+                  requiredLessons: ["scam-awareness", "password-safety"],
+                  steps: [
+                    {
+                      id: "step-1",
+                      type: "instruction",
+                      title: "Recognizing scams",
+                      content: "Learn to identify advanced scams via SMS, email, and phone calls. Watch out for unexpected links and urgent requests.",
+                      hint: "Always double-check the sender and ask someone if you are unsure."
+                    },
+                    {
+                      id: "step-2",
+                      type: "instruction",
+                      title: "Secure passwords",
+                      content: "Use unique and strong passwords for every service. Enable two-factor authentication where possible.",
+                      hint: "A password manager can help you keep track of all your passwords."
+                    },
+                    {
+                      id: "step-3",
+                      type: "instruction",
+                      title: "Phishing and online risks",
+                      content: "Phishing means scammers try to trick you into giving away information via fake websites or emails. Always check the web address and do not click suspicious links.",
+                      hint: "Type the web address yourself instead of clicking links in emails."
+                    },
+                    {
+                      id: "step-4",
+                      type: "quiz",
+                      title: "Check your knowledge",
+                      content: "What is a sign of phishing?",
+                      validation: {
+                        correctAnswer: "Unexpected links and requests for information"
+                      }
+                    }
+                  ]
+                },
             {
               id: "digital-photos-memories",
               title: "Digital photos & memories",
