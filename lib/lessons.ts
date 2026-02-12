@@ -48,6 +48,47 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "digital-photos-memories",
+      title: "Digitala foton & minnen",
+      description: "Lär dig skanna gamla foton, organisera bilder och dela med familjen.",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 20,
+      points: 175,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Skanna gamla foton",
+          content: "Du kan använda din mobilkamera eller en särskild app för att skanna gamla pappersfoton. Lägg fotot på ett bord med bra ljus och ta en bild!",
+          hint: "Det finns appar som förbättrar kvaliteten, t.ex. Google PhotoScan."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Organisera dina bilder",
+          content: "Skapa album i din mobil eller dator för att sortera bilder. Du kan döpa albumen efter år, personer eller händelser.",
+          hint: "Det blir lättare att hitta bilder senare!"
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Dela med familjen",
+          content: "Du kan dela bilder via e-post, SMS eller appar som Google Foto eller WhatsApp. Välj vilka du vill dela med och skicka!",
+          hint: "Dela bara bilder du är bekväm med att andra ser."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Testa din kunskap",
+          content: "Vad är ett bra sätt att organisera bilder?",
+          validation: {
+            correctAnswer: "Skapa album och sortera efter år eller personer"
+          }
+        }
+      ]
+    },
+    {
       id: "ai-everyday-life",
       title: "AI i vardagen",
       description: "Vad AI är, hur du använder det, och hur du gör det säkert. Praktiska verktyg för vardagen!",
@@ -551,6 +592,47 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
   ],
   en: [
+            {
+              id: "digital-photos-memories",
+              title: "Digital photos & memories",
+              description: "Learn to scan old photos, organize pictures, and share with family.",
+              category: "basics",
+              difficulty: "beginner",
+              duration: 20,
+              points: 175,
+              steps: [
+                {
+                  id: "step-1",
+                  type: "instruction",
+                  title: "Scan old photos",
+                  content: "You can use your phone camera or a special app to scan old paper photos. Place the photo on a table with good light and take a picture!",
+                  hint: "There are apps that improve quality, e.g. Google PhotoScan."
+                },
+                {
+                  id: "step-2",
+                  type: "instruction",
+                  title: "Organize your pictures",
+                  content: "Create albums on your phone or computer to sort pictures. You can name albums by year, people, or events.",
+                  hint: "It will be easier to find pictures later!"
+                },
+                {
+                  id: "step-3",
+                  type: "instruction",
+                  title: "Share with family",
+                  content: "You can share pictures via email, SMS, or apps like Google Photos or WhatsApp. Choose who you want to share with and send!",
+                  hint: "Only share pictures you are comfortable with others seeing."
+                },
+                {
+                  id: "step-4",
+                  type: "quiz",
+                  title: "Check your knowledge",
+                  content: "What is a good way to organize pictures?",
+                  validation: {
+                    correctAnswer: "Create albums and sort by year or people"
+                  }
+                }
+              ]
+            },
         {
           id: "ai-everyday-life",
           title: "AI for Everyday Life",
