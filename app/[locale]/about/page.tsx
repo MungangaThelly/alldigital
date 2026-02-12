@@ -4,6 +4,13 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const { locale: localeParam } = await params;
   const locale = getLocaleOrDefault(localeParam);
   const t = getDictionary(locale);
+  const accessPolicyLine = {
+    sv: "Intäkter från organisationer och frivilliga stöd håller fri tillgång öppen.",
+    en: "Revenue from organizations and optional supporter donations sustains free access.",
+    ar: "إيرادات المؤسسات والتبرعات الاختيارية من الداعمين تحافظ على استمرار الوصول المجاني.",
+    ti: "ካብ ትካላት ዝመጽእ እቶትን ፈቓዳዊ ደገፍን ነጻ ተበፃሒነት ክቕፅል ይሕግዝ።",
+    fr: "Les revenus des organisations et les dons facultatifs des soutiens maintiennent l'accès gratuit.",
+  }[locale];
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -14,6 +21,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.about.missionTitle}</h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-6">{t.about.missionP1}</p>
           <p className="text-xl text-gray-700 leading-relaxed">{t.about.missionP2}</p>
+          <p className="text-lg text-gray-600 leading-relaxed mt-4">{accessPolicyLine}</p>
         </div>
 
         <div className="bg-white rounded-xl shadow-md border-2 border-gray-200 p-8 mb-8">

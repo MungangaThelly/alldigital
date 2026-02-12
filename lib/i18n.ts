@@ -293,7 +293,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         phoneDesc: "Vilka knappar gör vad? Lugn och ro.",
       },
       ctaTitle: "Redo att ta första steget?",
-      ctaSubtitle: "Börja idag. Det är gratis att prova.",
+      ctaSubtitle: "Börja idag. Kärnan är alltid gratis.",
       ctaButton: "Starta din resa",
           testimonialsTitle: "Vad andra säger",
           testimonials: [
@@ -323,7 +323,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       missionP1:
         "Tillsammans digitalt skapades för att hjälpa äldre vuxna i Sverige att bemästra digital kommunikation med självförtroende. Vi tror att alla förtjänar att känna sig bekväma med teknologi, oavsett ålder.",
       missionP2:
-        "Ingen stress. Ingen jargong. Ingen rädsla för att göra fel. Bara stöd, tålamod och en trygg plats att lära sig.",
+        "Ingen stress. Ingen jargong. Ingen rädsla för att göra fel. Bara stöd, tålamod och en trygg plats att lära sig. Kärnan är alltid gratis, och säkerhetskritiskt innehåll ligger aldrig bakom betalvägg.",
       whyTitle: "Varför Tillsammans digitalt?",
       reasons: [
         {
@@ -451,7 +451,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       faqItems: [
         {
           question: "Kostar det något att använda Tillsammans digitalt?",
-          answer: "Grundfunktionerna är helt gratis. Det finns också premium-innehåll för dem som vill lära sig mer, men allt viktigt är gratis.",
+          answer: "Kärnan är alltid gratis. Säkerhetskritiskt innehåll ligger aldrig bakom betalvägg, och intäkter från organisationer håller fri tillgång öppen.",
         },
         {
           question: "Vad händer om jag gör fel?",
@@ -613,7 +613,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         phoneDesc: "Which buttons do what? Calm and steady.",
       },
       ctaTitle: "Ready to take the first step?",
-      ctaSubtitle: "Start today. It is free to try.",
+      ctaSubtitle: "Start today. Core access is always free.",
       ctaButton: "Start your journey",
           testimonialsTitle: "What others say",
           testimonials: [
@@ -643,7 +643,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       missionP1:
         "Tillsammans digitalt was created to help older adults in Sweden master digital communication with confidence. We believe everyone deserves to feel comfortable with technology, regardless of age.",
       missionP2:
-        "No stress. No jargon. No fear of making mistakes. Just support, patience, and a safe place to learn.",
+        "No stress. No jargon. No fear of making mistakes. Just support, patience, and a safe place to learn. Core access is always free, and safety-critical content is never paywalled.",
       whyTitle: "Why Tillsammans digitalt?",
       reasons: [
         {
@@ -771,7 +771,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       faqItems: [
         {
           question: "Does it cost anything to use Tillsammans digitalt?",
-          answer: "The core features are completely free. There is also premium content for those who want to learn more, but everything essential is free.",
+          answer: "Core access is always free. Safety-critical content is never paywalled, and organization funding keeps free access open.",
         },
         {
           question: "What happens if I make a mistake?",
@@ -933,7 +933,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         phoneDesc: "أي زر يفعل ماذا؟ بهدوء.",
       },
       ctaTitle: "جاهز للخطوة الأولى؟",
-      ctaSubtitle: "ابدأ اليوم. التجربة مجانية.",
+      ctaSubtitle: "ابدأ اليوم. الوصول الأساسي مجاني دائمًا.",
       ctaButton: "ابدأ رحلتك",
           testimonialsTitle: "ماذا يقول الآخرون",
           testimonials: [
@@ -963,7 +963,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       missionP1:
         "تم إنشاء Tillsammans digitalt لمساعدة كبار السن في السويد على إتقان التواصل الرقمي بثقة. نؤمن أن الجميع يستحق أن يشعر بالراحة مع التكنولوجيا، بغض النظر عن العمر.",
       missionP2:
-        "لا توتر. لا مصطلحات معقدة. لا خوف من الخطأ. فقط دعم وصبر ومكان آمن للتعلّم.",
+        "لا توتر. لا مصطلحات معقدة. لا خوف من الخطأ. فقط دعم وصبر ومكان آمن للتعلّم. الوصول الأساسي مجاني دائمًا، والمحتوى المتعلق بالسلامة لا يوضع خلف جدار دفع.",
       whyTitle: "لماذا Tillsammans digitalt؟",
       reasons: [
         {
@@ -1093,7 +1093,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       faqItems: [
         {
           question: "هل يكلف استخدام Tillsammans digitalt شيئًا؟",
-          answer: "الميزات الأساسية مجانية تمامًا. يوجد أيضًا محتوى مدفوع لمن يريد التعمق، لكن كل ما هو أساسي مجاني.",
+          answer: "الوصول الأساسي مجاني دائمًا. المحتوى المتعلق بالسلامة لا يوضع خلف جدار دفع، وتمويل المؤسسات يحافظ على بقاء الوصول المجاني متاحًا.",
         },
         {
           question: "ماذا يحدث إذا ارتكبت خطأ؟",
@@ -1255,7 +1255,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         phoneDesc: "እንታይ ናይ ነፍሲ ኣንጻር እዩ? ብምዕሩግ።",
       },
       ctaTitle: "ንመጀመርያ ደረጃ ደስ ኣለካ?",
-      ctaSubtitle: "ዛሬ ጀምር። ምፈታን ነጻ እዩ።",
+      ctaSubtitle: "ዛሬ ጀምር። ቀንዲ ተበፃሒነት ኩሉ ጊዜ ነጻ እዩ።",
       ctaButton: "ጉዞኻ ጀምር",
           testimonialsTitle: "ካልኦት እንታይ ይበሉ",
           testimonials: [
@@ -1285,7 +1285,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       missionP1:
         "Tillsammans digitalt ንዓበይቲ ኣብ ስዊድን ዲጂታል ግንኙነት ብምትእምነት ክትምሃሩ እዩ ተፈጢሩ። ኩሉ ሰብ ከም ቴክኖሎጂ ምችእ ክስማዕ ይግባእ እምነትና እዩ።",
       missionP2:
-        "ጭንቀት የለን። ዘይንባብ ቃላት የለን። ስሕተት ንምስራሕ ፍርሃት የለን። ግን ድጋፍን ትግስትን ዘለዎ ርቡዕ ቦታ እዩ።",
+        "ጭንቀት የለን። ዘይንባብ ቃላት የለን። ስሕተት ንምስራሕ ፍርሃት የለን። ግን ድጋፍን ትግስትን ዘለዎ ርቡዕ ቦታ እዩ። ቀንዲ ተበፃሒነት ኩሉ ጊዜ ነጻ እዩ፣ ናይ ድሕነት ትሕዝቶ ድማ ኣብ ድሕሪ ክፍሊት መርበብ ኣይእትውን።",
       whyTitle: "ስለ ምንታይ Tillsammans digitalt?",
       reasons: [
         {
@@ -1415,7 +1415,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       faqItems: [
         {
           question: "Tillsammans digitalt ንምጥቃም ክፍሊት ኣለዎ?",
-          answer: "መሰረታዊ ባህሪታት ነጻ እዮም። ወደብ ዝያዳ ንምምሃር እንተፈለግካ ፕሪሚየም ኣለዎ፣ ግን ኣስፈላጊ ኩሉ ነጻ እዩ።",
+          answer: "ቀንዲ ተበፃሒነት ኩሉ ጊዜ ነጻ እዩ። ናይ ድሕነት ትሕዝቶ ኣብ ድሕሪ ክፍሊት መርበብ ኣይእትውን፣ ናይ ትካላት ደገፍ ድማ ነጻ ተበፃሒነት ክቕፅል ይሕግዝ።",
         },
         {
           question: "ስሕተት እተገብር እንታይ ይኸውን?",
@@ -1585,7 +1585,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         phoneDesc: "Quel bouton fait quoi ? Calmement.",
       },
       ctaTitle: "Prêt(e) à faire le premier pas ?",
-      ctaSubtitle: "Commencez aujourd'hui. C'est gratuit à essayer.",
+      ctaSubtitle: "Commencez aujourd'hui. L'accès de base est toujours gratuit.",
       ctaButton: "Commencer votre parcours",
           testimonialsTitle: "Ce que disent les autres",
           testimonials: [
@@ -1615,7 +1615,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       missionP1:
         "Tillsammans digitalt a été créé pour aider les personnes âgées en Suède à maîtriser la communication numérique en toute confiance. Nous pensons que tout le monde mérite de se sentir à l'aise avec la technologie, quel que soit l'âge.",
       missionP2:
-        "Pas de stress. Pas de jargon. Pas de peur de se tromper. Juste du soutien, de la patience et un lieu sûr pour apprendre.",
+        "Pas de stress. Pas de jargon. Pas de peur de se tromper. Juste du soutien, de la patience et un lieu sûr pour apprendre. L'accès de base est toujours gratuit, et le contenu critique pour la sécurité n'est jamais paywallé.",
       whyTitle: "Pourquoi Tillsammans digitalt ?",
       reasons: [
         {
@@ -1745,7 +1745,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       faqItems: [
         {
           question: "L'utilisation de Tillsammans digitalt est-elle payante ?",
-          answer: "Les fonctionnalités de base sont entièrement gratuites. Il existe aussi du contenu premium pour ceux qui veulent aller plus loin, mais tout l'essentiel est gratuit.",
+          answer: "L'accès de base est toujours gratuit. Le contenu critique pour la sécurité n'est jamais paywallé, et le financement des organisations maintient l'accès gratuit.",
         },
         {
           question: "Que se passe-t-il si je fais une erreur ?",
