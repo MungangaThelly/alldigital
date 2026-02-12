@@ -11,7 +11,8 @@ export default function ProgressPage({ params }: { params: Promise<{ locale: str
   const locale = getLocaleOrDefault(localeParam);
   const t = getDictionary(locale);
   const lessons = getLessons(locale);
-  const { progress, isLoaded } = useUserProgress();
+  const userProgress = useUserProgress();
+  const { progress, isLoaded, resetProgress } = userProgress;
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -55,7 +56,6 @@ export default function ProgressPage({ params }: { params: Promise<{ locale: str
     (mockProgress.completedLessons / mockProgress.totalLessons) * 100
   );
 
-  const { resetProgress } = useUserProgress();
   const handleReset = () => {
     resetProgress();
     window.location.reload();
