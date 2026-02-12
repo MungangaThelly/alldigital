@@ -48,6 +48,47 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "ai-everyday-life",
+      title: "AI i vardagen",
+      description: "Vad AI är, hur du använder det, och hur du gör det säkert. Praktiska verktyg för vardagen!",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 20,
+      points: 175,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Vad är AI?",
+          content: "AI betyder artificiell intelligens. Det är datorprogram som kan hjälpa dig med olika saker, som att skriva texter, planera resor eller hitta information.",
+          hint: "AI finns i många appar och tjänster du redan använder!"
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "AI i vardagen",
+          content: "Du kan använda AI för att planera en resa, skriva brev, översätta språk eller få tips på recept. Prova att fråga en AI-tjänst om hjälp!",
+          hint: "Exempel: Google, ChatGPT, eller röstassistenter."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Säker användning av AI",
+          content: "Var försiktig med att dela personlig information med AI-tjänster. Lita inte blint på allt AI säger – dubbelkolla viktiga saker!",
+          hint: "Fråga gärna någon om du är osäker."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Testa din kunskap",
+          content: "Vad är viktigt när du använder AI?",
+          validation: {
+            correctAnswer: "Dela inte personlig information och dubbelkolla viktiga svar"
+          }
+        }
+      ]
+    },
+    {
       id: "sms-basics",
       title: "Skicka ditt första SMS",
       description: "Lär dig skicka textmeddelanden till familj och vänner. Enkelt och tryggt.",
@@ -510,6 +551,47 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
   ],
   en: [
+        {
+          id: "ai-everyday-life",
+          title: "AI for Everyday Life",
+          description: "What AI is, how to use it, and how to do so safely. Practical tools for daily life!",
+          category: "basics",
+          difficulty: "beginner",
+          duration: 20,
+          points: 175,
+          steps: [
+            {
+              id: "step-1",
+              type: "instruction",
+              title: "What is AI?",
+              content: "AI means artificial intelligence. It's computer programs that can help you with many things, like writing texts, planning trips, or finding information.",
+              hint: "AI is in many apps and services you already use!"
+            },
+            {
+              id: "step-2",
+              type: "instruction",
+              title: "AI in daily life",
+              content: "You can use AI to plan a trip, write a letter, translate languages, or get recipe ideas. Try asking an AI service for help!",
+              hint: "Examples: Google, ChatGPT, or voice assistants."
+            },
+            {
+              id: "step-3",
+              type: "instruction",
+              title: "Safe AI use",
+              content: "Be careful not to share personal information with AI services. Don't blindly trust everything AI says – double-check important things!",
+              hint: "Ask someone if you are unsure."
+            },
+            {
+              id: "step-4",
+              type: "quiz",
+              title: "Check your knowledge",
+              content: "What is important when using AI?",
+              validation: {
+                correctAnswer: "Don't share personal info and double-check important answers"
+              }
+            }
+          ]
+        },
     {
       id: "sms-basics",
       title: "Send your first SMS",
