@@ -18,13 +18,8 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const lastShown = localStorage.getItem(STORAGE_KEY);
-    const now = Date.now();
-    if (!lastShown || now - parseInt(lastShown, 10) > frequencyDays * 24 * 60 * 60 * 1000) {
-      setShow(true);
-      localStorage.setItem(STORAGE_KEY, now.toString());
-    }
-  }, [frequencyDays]);
+    setShow(true);
+  }, []);
 
   if (!show) return null;
 

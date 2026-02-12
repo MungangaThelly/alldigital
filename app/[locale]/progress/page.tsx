@@ -55,9 +55,20 @@ export default function ProgressPage({ params }: { params: Promise<{ locale: str
     (mockProgress.completedLessons / mockProgress.totalLessons) * 100
   );
 
+  const { resetProgress } = useUserProgress();
+  const handleReset = () => {
+    resetProgress();
+    window.location.reload();
+  };
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Header */}
+      <button
+        onClick={handleReset}
+        className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-lg font-semibold mb-6"
+      >
+        Återställ alla lektioner
+      </button>
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">{t.progress.title}</h1>
         <p className="text-xl text-gray-700">{t.progress.subtitle}</p>
