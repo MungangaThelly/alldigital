@@ -3,7 +3,6 @@
 import { use, useState, useEffect } from "react";
 import { getLessonById } from "@/lib/lessons";
 import SupportPopup from "@/components/SupportPopup";
-import { useEffect, useState } from "react";
 import { useUserProgress } from "@/lib/useUserProgress";
 import { FaArrowLeft, FaArrowRight, FaCheckCircle, FaLightbulb } from "react-icons/fa";
 import { useRouter } from "next/navigation";
