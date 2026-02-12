@@ -252,57 +252,72 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "scam-awareness",
-      title: "Känna igen bedrägerier",
-      description: "Lär dig identifiera och undvika vanliga bedrägerier via SMS och e-post.",
-      category: "security",
-      difficulty: "intermediate",
+      id: "health-1177",
+      title: "1177 & E-hälsa - Vårdkontakter online",
+      description: "Logga in, läs meddelanden, förnya recept och boka/ändra tider på 1177 och andra e-hälsotjänster.",
+      category: "e-services",
+      difficulty: "beginner",
       duration: 20,
-      points: 200,
-      requiredLessons: ["sms-basics"],
+      points: 175,
+      requiredLessons: ["bankid-intro"],
       steps: [
         {
           id: "step-1",
           type: "instruction",
-          title: "Viktigt: Håll dig säker",
-          content: "Bedragare försöker lura människor genom falska meddelanden. Vi ska lära dig hur du känner igen dem. Kom ihåg: Din bank ringer ALDRIG och ber om koder eller lösenord!",
-          hint: "Detta kan skydda dig från att förlora pengar.",
+          title: "Vad är 1177 och e-hälsa?",
+          content: "1177 är Sveriges vårdguide. Här kan du läsa råd, kontakta vården och se dina vårdärenden. Det finns även andra e-hälsotjänster för att hantera din hälsa online.",
+          hint: "1177 används av regionerna i hela Sverige."
         },
         {
           id: "step-2",
-          type: "interactive",
-          title: "Granska meddelandet",
-          content: "Titta på detta SMS. Är det äkta eller falskt? Leta efter varningssignaler.",
-          component: "ScamDetector",
-          hint: "Kolla avsändaren, språket och om de ber om personlig information.",
+          type: "instruction",
+          title: "Logga in säkert",
+          content: "För att se dina personliga uppgifter loggar du in med BankID. Det är säkert och går snabbt. Använd bara den officiella 1177-webbplatsen eller appen.",
+          hint: "BankID skyddar din information."
         },
         {
           id: "step-3",
           type: "instruction",
-          title: "Bra gjort!",
-          content: "Nu vet du hur man känner igen bedrägerier. Kom ihåg: Om något känns konstigt, är det förmodligen det. Ring alltid din bank direkt på numret på ditt kort om du är osäker.",
-          hint: "Spara detta nummer i din telefon: Bankens kundservice.",
+          title: "Förnya recept",
+          content: "När du är inloggad kan du enkelt förnya dina recept digitalt. Du får ett meddelande när receptet är klart att hämta på apoteket.",
+          hint: "Du kan förnya recept för dig själv eller barn."
         },
-      ],
+        {
+          id: "step-4",
+          type: "instruction",
+          title: "Boka och ändra tider",
+          content: "Du kan boka, omboka eller avboka vårdtider direkt i mobilen. Välj tid som passar dig och få bekräftelse via e-post eller SMS.",
+          hint: "Du kan alltid komma tillbaka och se dina bokningar."
+        },
+        {
+          id: "step-5",
+          type: "quiz",
+          title: "Testa din kunskap",
+          content: "Vad kan du göra på 1177 och andra e-hälsotjänster?",
+          validation: {
+            correctAnswer: "Förnya recept och boka/ändra tider online"
+          }
+        }
+      ]
     },
     {
       id: "video-call",
+      requiredLessons: ["sms-basics"],
       title: "Ring ett videosamtal",
       description: "Se dina barnbarn och prata med dem ansiktsikten. Lär dig använda FaceTime eller WhatsApp Video.",
       category: "communication",
       difficulty: "intermediate",
       duration: 15,
       points: 175,
-      requiredLessons: ["sms-basics"],
       steps: [
         {
           id: "step-1",
           type: "instruction",
           title: "Videosamtal - Se varandra på distans",
           content: "Med videosamtal kan du både se och höra personen du pratar med. Perfect för att hänga med barnbarnen eller prata med vänner!",
-          hint: "Du behöver ha kamera och internet för detta.",
-        },
-      ],
+          hint: "Du behöver ha kamera och internet för detta."
+        }
+      ]
     },
     {
       id: "email-basics",
@@ -1014,45 +1029,52 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
     {
       id: "health-1177",
-      title: "1177 - Healthcare online",
-      description: "Log in, read messages, and book appointments on 1177.",
+      title: "1177 & E-health - Healthcare online",
+      description: "Log in, read messages, renew prescriptions, and book/change appointments on 1177 and other e-health services.",
       category: "e-services",
       difficulty: "beginner",
-      duration: 15,
-      points: 150,
+      duration: 20,
+      points: 175,
       requiredLessons: ["bankid-intro"],
       steps: [
         {
           id: "step-1",
           type: "instruction",
-          title: "What is 1177?",
-          content: "1177 is Sweden's healthcare guide. You can read advice, contact care providers, and view your healthcare matters.",
-          hint: "1177 is used by regions all over Sweden.",
+          title: "What is 1177 and e-health?",
+          content: "1177 is Sweden's healthcare guide. You can read advice, contact care providers, and view your healthcare matters. There are also other e-health services to manage your health online.",
+          hint: "1177 is used by regions all over Sweden."
         },
         {
           id: "step-2",
           type: "instruction",
           title: "Log in safely",
-          content: "To see your personal information you log in with BankID. It is safe and quick.",
-          hint: "Only use the official 1177 website or app.",
+          content: "To see your personal information you log in with BankID. It is safe and quick. Only use the official 1177 website or app.",
+          hint: "BankID protects your information."
         },
         {
           id: "step-3",
           type: "instruction",
-          title: "Messages and bookings",
-          content: "When logged in you can read messages, renew prescriptions, and book or cancel appointments.",
-          hint: "You can always come back and read messages again.",
+          title: "Renew prescriptions",
+          content: "When logged in you can easily renew your prescriptions digitally. You get a message when your prescription is ready to pick up at the pharmacy.",
+          hint: "You can renew prescriptions for yourself or children."
         },
         {
           id: "step-4",
+          type: "instruction",
+          title: "Book and change appointments",
+          content: "You can book, reschedule, or cancel healthcare appointments directly on your mobile. Choose a time that suits you and get confirmation by email or SMS.",
+          hint: "You can always come back and see your bookings."
+        },
+        {
+          id: "step-5",
           type: "quiz",
           title: "Check your knowledge",
-          content: "What do you need to log in to 1177?",
+          content: "What can you do on 1177 and other e-health services?",
           validation: {
-            correctAnswer: "BankID",
-          },
-        },
-      ],
+            correctAnswer: "Renew prescriptions and book/change appointments online"
+          }
+        }
+      ]
     },
     {
       id: "password-safety",
