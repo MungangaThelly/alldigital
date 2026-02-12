@@ -25,6 +25,15 @@
 
 ---
 
+## Access & Sustainability Model
+- Core access is always free
+- Safety-critical content is never paywalled
+- Organizations pay for management and reporting
+- Optional supporter donations are welcome
+- Revenue sustains free access
+
+---
+
 ## Key Features
 - Interactive phone simulations
 - Progressive lessons and points

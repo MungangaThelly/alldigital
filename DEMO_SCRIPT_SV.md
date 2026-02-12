@@ -12,6 +12,8 @@
 
 "Plattformen är helt gratis att börja med. Den är utformad med stort, läsligt typsnitt och enkla knappar – perfekt om du är ny på digitalteknik.
 
+Kärnan är alltid gratis, och säkerhetskritiskt innehåll ligger aldrig bakom betalvägg. Organisationer betalar för administration och rapportering, och frivilliga stöd är välkomna.
+
 Vi fokuserar på de svenska tjänster du faktiskt använder: BankID, Swish, 1177, och mycket mer. Allt förklarat på vanligt svenska."
 
 **[Point out features section]**
@@ -106,7 +108,9 @@ Vi fokuserar på de svenska tjänster du faktiskt använder: BankID, Swish, 1177
 ## Scene 8: Avslutning (5:15-5:30)
 **[Return to homepage]**
 
-"Tillsammans digitalt finns på denna webbplats. Det är helt gratis att börja, och du kan gå i din egen takt.
+"Tillsammans digitalt finns på denna webbplats. Kärnan är alltid gratis, och du kan gå i din egen takt.
+
+Vi är transparenta med hur vi finansierar arbetet: intäkter från organisationer och frivilliga stöd håller fri tillgång öppen för alla.
 
 Om du har frågor kan du ringa oss, chatta eller mailas. Vi är här för att stödja dig på din digitala resa.
 

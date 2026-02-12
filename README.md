@@ -15,6 +15,14 @@ A gamified, interactive learning platform designed to help older adults in Swede
 - 💬 **Success Stories**: Learner testimonials for social proof
 - 👥 **Human Support**: Integrated help and mentor connections
 
+## Access Policy
+
+- Core access is always free for learners
+- Safety-critical content is never paywalled
+- Organizations pay for management and reporting
+- Optional supporter donations are welcome
+- Revenue sustains free access
+
 ## Getting Started
 
 Install dependencies:
