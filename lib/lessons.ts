@@ -57,6 +57,14 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 200,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: "Stöd oss med Swish!",
+          content: "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till 123 456 78 90. Tack för ditt stöd!",
+          hint: "Ditt stöd gör skillnad för många!",
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Inställningar för enklare användning",
