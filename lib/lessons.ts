@@ -114,6 +114,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
             hint: "Dubbelkolla alltid avsändaren och fråga någon om du är osäker."
         },
         {
+          id: "step-vishing-smishing",
+          type: "instruction",
+          title: "Vishing och smishing",
+          content: "Vishing är bedrägeri via telefonsamtal där någon försöker lura dig att lämna ut information eller BankID. Smishing är bedrägeri via SMS där du får länkar eller meddelanden som ser ut att komma från banken eller myndigheter. Klicka aldrig på länkar i oväntade SMS och lämna aldrig ut information på telefon.",
+          hint: "Banken eller myndigheter ber aldrig om BankID eller koder via telefon eller SMS."
+        },
+        {
           id: "step-2",
           type: "instruction",
           title: "Säkra lösenord",
@@ -138,13 +145,6 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
         }
       ]
     },
-          {
-            id: "step-vishing-smishing",
-            type: "instruction",
-            title: "Vishing och smishing",
-            content: "Vishing är bedrägeri via telefonsamtal där någon försöker lura dig att lämna ut information eller BankID. Smishing är bedrägeri via SMS där du får länkar eller meddelanden som ser ut att komma från banken eller myndigheter. Klicka aldrig på länkar i oväntade SMS och lämna aldrig ut information på telefon.",
-            hint: "Banken eller myndigheter ber aldrig om BankID eller koder via telefon eller SMS."
-          },
     {
       id: "digital-photos-memories",
       title: "Digitala foton & minnen",
