@@ -48,6 +48,47 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "smartphones-apps-indepth",
+      title: "Smartphones & appar (Fördjupning)",
+      description: "Lär dig mer om inställningar, backup, lagring och molntjänster för din smartphone.",
+      category: "basics",
+      difficulty: "intermediate",
+      duration: 25,
+      points: 200,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Inställningar för enklare användning",
+          content: "Upptäck inställningar som gör mobilen lättare att använda: större text, mörkt läge, och förenklade menyer.",
+          hint: "Du hittar dessa under 'Tillgänglighet' och 'Skärm'."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Backup och lagring",
+          content: "Säkerhetskopiera dina bilder och kontakter så att inget försvinner om mobilen tappas bort. Använd Google Drive, iCloud eller liknande tjänster.",
+          hint: "Automatisk backup kan aktiveras i inställningarna."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Molntjänster",
+          content: "Med molntjänster kan du spara och komma åt dina filer från flera enheter. Exempel: Google Drive, Dropbox, iCloud.",
+          hint: "Du kan dela filer och bilder med familj och vänner."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Testa din kunskap",
+          content: "Vad är en fördel med att använda molntjänster?",
+          validation: {
+            correctAnswer: "Du kan komma åt dina filer från flera enheter och dela dem enkelt"
+          }
+        }
+      ]
+    },
+    {
       id: "advanced-digital-security",
       title: "Avancerad digital säkerhet (Certifierad nivå)",
       description: "Lär dig känna igen bedrägerier, skapa säkra lösenord och förstå nätfiske och andra online-risker.",
@@ -649,6 +690,47 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
   ],
   en: [
+                    {
+                      id: "smartphones-apps-indepth",
+                      title: "Smartphones & Apps (In-Depth)",
+                      description: "Learn more about settings, backup, storage, and cloud services for your smartphone.",
+                      category: "basics",
+                      difficulty: "intermediate",
+                      duration: 25,
+                      points: 200,
+                      steps: [
+                        {
+                          id: "step-1",
+                          type: "instruction",
+                          title: "Settings for easier use",
+                          content: "Discover settings that make your phone easier to use: larger text, dark mode, and simplified menus.",
+                          hint: "You find these under 'Accessibility' and 'Display'."
+                        },
+                        {
+                          id: "step-2",
+                          type: "instruction",
+                          title: "Backup and storage",
+                          content: "Back up your photos and contacts so nothing is lost if your phone is misplaced. Use Google Drive, iCloud, or similar services.",
+                          hint: "Automatic backup can be enabled in settings."
+                        },
+                        {
+                          id: "step-3",
+                          type: "instruction",
+                          title: "Cloud services",
+                          content: "With cloud services you can save and access your files from multiple devices. Examples: Google Drive, Dropbox, iCloud.",
+                          hint: "You can share files and photos with family and friends."
+                        },
+                        {
+                          id: "step-4",
+                          type: "quiz",
+                          title: "Check your knowledge",
+                          content: "What is an advantage of using cloud services?",
+                          validation: {
+                            correctAnswer: "You can access your files from multiple devices and share them easily"
+                          }
+                        }
+                      ]
+                    },
                 {
                   id: "advanced-digital-security",
                   title: "Advanced Digital Security (Certified Level)",
