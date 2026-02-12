@@ -110,8 +110,8 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           id: "step-1",
           type: "instruction",
           title: "Känna igen bedrägerier",
-          content: "Lär dig identifiera avancerade bedrägerier via SMS, e-post och samtal. Se upp för oväntade länkar och krav på snabba beslut.",
-          hint: "Dubbelkolla alltid avsändaren och fråga någon om du är osäker."
+            content: "Lär dig identifiera avancerade bedrägerier via SMS (smishing), e-post (phishing) och telefonsamtal (vishing). Bedragare använder olika trick: de kan låtsas vara från banken, skapa panik, eller be dig agera snabbt. Se upp för oväntade länkar, krav på snabba beslut, och personer som ber om personlig information eller BankID. Typiska trick är att skapa stress, hota med problem, eller erbjuda något som låter för bra för att vara sant.",
+            hint: "Dubbelkolla alltid avsändaren och fråga någon om du är osäker."
         },
         {
           id: "step-2",
@@ -138,6 +138,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
         }
       ]
     },
+          {
+            id: "step-vishing-smishing",
+            type: "instruction",
+            title: "Vishing och smishing",
+            content: "Vishing är bedrägeri via telefonsamtal där någon försöker lura dig att lämna ut information eller BankID. Smishing är bedrägeri via SMS där du får länkar eller meddelanden som ser ut att komma från banken eller myndigheter. Klicka aldrig på länkar i oväntade SMS och lämna aldrig ut information på telefon.",
+            hint: "Banken eller myndigheter ber aldrig om BankID eller koder via telefon eller SMS."
+          },
     {
       id: "digital-photos-memories",
       title: "Digitala foton & minnen",
