@@ -8,6 +8,7 @@ interface SupportPopupProps {
 }
 
 const STORAGE_KEY = "support_popup_last_shown";
+const DONT_SHOW_KEY = "support_popup_dont_show";
 
 const SupportPopup: React.FC<SupportPopupProps> = ({
   swishNumber,
@@ -16,10 +17,30 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
   frequencyDays = 30,
 }) => {
   const [show, setShow] = useState(false);
+  const [dontShow, setDontShow] = useState(false);
 
   useEffect(() => {
-    setShow(true);
-  }, []);
+    const dontShowValue = localStorage.getItem(DONT_SHOW_KEY);
+    if (dontShowValue === "true") {
+      setShow(false);
+      return;
+    }
+    const lastShown = localStorage.getItem(STORAGE_KEY);
+    const now = Date.now();
+    if (!lastShown || now - parseInt(lastShown, 10) > frequencyDays * 24 * 60 * 60 * 1000) {
+      setShow(true);
+      localStorage.setItem(STORAGE_KEY, now.toString());
+    }
+  }, [frequencyDays]);
+
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  const handleDontShow = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDontShow(e.target.checked);
+    localStorage.setItem(DONT_SHOW_KEY, e.target.checked ? "true" : "false");
+  };
 
   if (!show) return null;
 
@@ -48,12 +69,23 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
         <p>{message}</p>
         <img src={qrCodeUrl} alt="Swish QR-kod" style={{ width: 180, margin: "16px auto" }} />
         <p style={{ fontWeight: "bold", fontSize: 18 }}>{swishNumber}</p>
-        <button
-          style={{ marginTop: 16, padding: "8px 24px", borderRadius: 6, background: "#6f2da8", color: "#fff", border: "none", fontSize: 16 }}
-          onClick={() => setShow(false)}
-        >
-          Stäng
-        </button>
+        <div style={{ marginTop: 16 }}>
+          <label style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
+            <input
+              type="checkbox"
+              checked={dontShow}
+              onChange={handleDontShow}
+              style={{ marginRight: 8 }}
+            />
+            Visa inte igen
+          </label>
+          <button
+            style={{ padding: "8px 24px", borderRadius: 6, background: "#6f2da8", color: "#fff", border: "none", fontSize: 16 }}
+            onClick={handleClose}
+          >
+            Stäng
+          </button>
+        </div>
       </div>
     </div>
   );
