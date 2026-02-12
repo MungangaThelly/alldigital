@@ -90,7 +90,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
     {
       id: "advanced-digital-security",
-      title: "Avancerad digital säkerhet (Certifierad nivå)",
+      title: "Avancerad digital säkerhet",
       description: "Lär dig känna igen bedrägerier, skapa säkra lösenord och förstå nätfiske och andra online-risker.",
       category: "security",
       difficulty: "advanced",
