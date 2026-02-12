@@ -238,7 +238,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
           )}
         </div>
       </div>
-    </>
   );
+}
 }
 }
