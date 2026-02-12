@@ -2,6 +2,8 @@
 
 import { use, useState, useEffect } from "react";
 import { getLessonById } from "@/lib/lessons";
+import SupportPopup from "@/components/SupportPopup";
+import { useEffect, useState } from "react";
 import { useUserProgress } from "@/lib/useUserProgress";
 import { FaArrowLeft, FaArrowRight, FaCheckCircle, FaLightbulb } from "react-icons/fa";
 import { useRouter } from "next/navigation";
@@ -13,8 +15,18 @@ import SpeechPlayer from "@/components/SpeechPlayer";
 import { getDictionary, getLocaleOrDefault, withLocale } from "@/lib/i18n";
 
 export default function LessonPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
+  const [supportConfig, setSupportConfig] = useState<any>(null);
   const router = useRouter();
   const { locale: localeParam, id } = use(params);
+    // Load support popup config if this is the second lesson
+    useEffect(() => {
+      if (id === "bankid-intro") {
+        fetch("/support-popup-config.json")
+          .then((res) => res.json())
+          .then(setSupportConfig)
+          .catch(() => setSupportConfig(null));
+      }
+    }, [id]);
   const locale = getLocaleOrDefault(localeParam);
   const t = getDictionary(locale);
   const lesson = getLessonById(locale, id);
@@ -101,7 +113,16 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <>
+      {id === "bankid-intro" && supportConfig && (
+        <SupportPopup
+          swishNumber={supportConfig.swishNumber}
+          qrCodeUrl={supportConfig.qrCodeUrl}
+          message={supportConfig.message}
+          frequencyDays={30}
+        />
+      )}
+      <div className="container mx-auto px-4 py-8">
       {/* Header */}
       <div className="max-w-4xl mx-auto mb-8">
         <button
@@ -218,5 +239,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
         </div>
       </div>
     </div>
+      </div>
+    </>
   );
 }
