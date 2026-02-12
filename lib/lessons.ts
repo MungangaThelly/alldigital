@@ -308,7 +308,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "health-1177",
+      id: "health-1177-sv",
       title: "1177 & E-hälsa - Vårdkontakter online",
       description: "Logga in, läs meddelanden, förnya recept och boka/ändra tider på 1177 och andra e-hälsotjänster.",
       category: "e-services",
@@ -497,7 +497,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "health-1177",
+      id: "health-1177-sv-short",
       title: "1177 - Vårdkontakter online",
       description: "Logga in, läs meddelanden och boka tid på 1177.",
       category: "e-services",
@@ -1125,7 +1125,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "health-1177",
+      id: "health-1177-en",
       title: "1177 & E-health - Healthcare online",
       description: "Log in, read messages, renew prescriptions, and book/change appointments on 1177 and other e-health services.",
       category: "e-services",
@@ -1595,7 +1595,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "health-1177",
+      id: "health-1177-ar",
       title: "1177 - الرعاية الصحية عبر الإنترنت",
       description: "سجّل الدخول، اقرأ الرسائل، واحجز المواعيد في 1177.",
       category: "e-services",
@@ -2058,7 +2058,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "health-1177",
+      id: "health-1177-ti",
       title: "1177 - ናይ ጥዕና ግልጋሎት ብኢንተርኔት",
       description: "ብ1177 ግባ፣ መልእኽቲ ኣንብብ፣ እና ቀጠሮ ምድላይ ተማሃር።",
       category: "e-services",
@@ -2521,7 +2521,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
     {
-      id: "health-1177",
+      id: "health-1177-fr",
       title: "1177 - Soins en ligne",
       description: "Connectez-vous, lisez les messages et prenez rendez-vous sur 1177.",
       category: "e-services",
