@@ -169,7 +169,23 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
             />
           </div>
 
-          {/* Interactive Component */}
+          {/* Interactive/Custom Component */}
+          {currentStep.component === "SupportPopup" && (
+            <div className="my-8">
+              <SupportPopup
+                swishNumber="070-481 03 77"
+                qrCodeUrl="/swish-qr.png"
+                message="Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"
+                frequencyDays={0}
+              />
+              <button
+                className="mt-6 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg text-lg font-semibold"
+                onClick={handleNext}
+              >
+                Nästa
+              </button>
+            </div>
+          )}
           {currentStep.type === "interactive" && (
             <div className="my-8">
               {currentStep.component === "PhoneSimulator" && (
