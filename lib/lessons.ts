@@ -145,7 +145,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       title: "Sociala nätverk med trygghet",
       description: "Många äldre vill använda sociala medier, men är osäkra. Lär dig skapa konto, logga in, sekretessinställningar, dela foto/meddelanden tryggt och undvika scam-kontakter.",
       category: "communication",
-      difficulty: "intermediate",
+      difficulty: "beginner",
       duration: 20,
       points: 180,
       steps: [
