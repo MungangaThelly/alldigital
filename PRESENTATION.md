@@ -1,110 +1,111 @@
+
 # Tillsammans digitalt
-## Digital Learning Platform for Seniors
-### Project Presentation
+## Digital lärplattform för äldre
+### Projektpresentation
 
 ---
 
 ## Problem
-- Many older adults feel excluded from digital services
-- Fear of mistakes blocks learning
-- Critical Swedish services (BankID, Swish, 1177) are now digital-first
+- Många äldre känner sig exkluderade från digitala tjänster
+- Rädsla för misstag hindrar lärande
+- Viktiga svenska samhällstjänster (BankID, Swish, 1177) är nu digitala i första hand
 
 ---
 
-## Audience
-- Seniors 65+ in Sweden
-- Family members supporting parents
-- Libraries, community centers, municipalities
+## Målgrupp
+- Äldre 65+ i Sverige
+- Anhöriga som stöttar föräldrar
+- Bibliotek, mötesplatser, kommuner
 
 ---
 
-## Solution Overview
-- A safe, guided learning platform
-- Step-by-step lessons with practice
-- Accessible and multilingual by design
+## Lösning
+- En säker, vägledd lärplattform
+- Steg-för-steg-lektioner med övningar
+- Tillgänglig och flerspråkig från grunden
 
 ---
 
-## Access & Sustainability Model
-- Core access is always free
-- Safety-critical content is never paywalled
-- Organizations pay for management and reporting
-- Optional supporter donations are welcome
-- Revenue sustains free access
+## Tillgångs- och hållbarhetsmodell
+- Kärntjänsten är alltid gratis
+- Säkerhetskritiskt innehåll är aldrig bakom betalvägg
+- Organisationer betalar för administration och rapportering
+- Frivilliga donationer välkomnas
+- Intäkter möjliggör fri tillgång
 
 ---
 
-## Key Features
-- Interactive phone simulations
-- Progressive lessons and points
-- Achievement badges for motivation
-- Voice narration for lesson text
-- Adjustable font size controls
+## Nyckelfunktioner
+- Interaktiva telefonsimuleringar
+- Progressiva lektioner och poäng
+- Utmärkelser för motivation
+- Berättarröst för lektionsinnehåll
+- Justerbar textstorlek
 
 ---
 
-## Multilingual Support
-- Swedish, English, Arabic, Tigrinya, French
-- RTL support for Arabic
-- Locale-aware content and date formats
+## Flerspråkigt stöd
+- Svenska, engelska, arabiska, tigrinja, franska
+- RTL-stöd för arabiska
+- Lokaliserat innehåll och datumformat
 
 ---
 
-## Learning Tracks
-- Staying in touch: SMS, email, video calls
-- Digital Sweden: BankID, Swish, e-services
-- Staying safe: scam awareness
-- Confidence basics: device familiarity
-- Social media basics
+## Lärspår
+- Hålla kontakt: SMS, e-post, videosamtal
+- Digitala Sverige: BankID, Swish, e-tjänster
+- Säkerhet: bedrägerimedvetenhet
+- Självförtroende: enhetsvana
+- Sociala medier
 
 ---
 
-## Social Proof
-- Testimonials from learners
-- Community-centered encouragement
-- Emphasis on confidence and independence
+## Socialt bevis
+- Citat från användare
+- Gemenskapsbaserad uppmuntran
+- Fokus på självförtroende och självständighet
 
 ---
 
-## Progress and Motivation
-- Progress dashboard
-- Badges for milestones
-- Visual reinforcement of achievements
+## Framsteg och motivation
+- Framstegsöversikt
+- Märken för milstolpar
+- Visuell förstärkning av prestationer
 
 ---
 
-## Accessibility
-- Large, readable typography
-- Adjustable font sizes
-- Simple navigation and clear CTAs
+## Tillgänglighet
+- Stor, lättläst typografi
+- Justerbara textstorlekar
+- Enkel navigering och tydliga uppmaningar
 
 ---
 
-## Technology
+## Teknik
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Web Speech API (voice narration)
+- Web Speech API (berättarröst)
 
 ---
 
-## Demo Flow (Suggested)
-1. Homepage in Swedish
-2. Lessons list (12 lessons)
-3. Open a lesson and play narration
-4. Interactive simulation
-5. Progress page with badges
-6. Accessibility controls
+## Demo-flöde (förslag)
+1. Startsida på svenska
+2. Lektionslista (12 lektioner)
+3. Öppna en lektion och spela upp berättarröst
+4. Interaktiv simulering
+5. Framstegssida med märken
+6. Tillgänglighetskontroller
 
 ---
 
-## Future Enhancements
-- Certificates of completion
-- Additional lesson tracks
-- Offline mode (PWA)
-- Community mentoring features
+## Framtida förbättringar
+- Intyg vid slutförande
+- Fler lärspår
+- Offlineläge (PWA)
+- Gemenskapsmentorskap
 
 ---
 
-## Thank You
-Questions?
+## Tack
+Frågor?
