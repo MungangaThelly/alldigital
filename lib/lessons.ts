@@ -195,6 +195,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           content: "Så startar du och ansluter till ett digitalt möte med Zoom, Teams eller FaceTime.",
           hint: "Du behöver en internetuppkoppling och ibland ett konto."
         },
+        // ...existing code...
         {
           id: "step-2",
           type: "instruction",
