@@ -281,8 +281,8 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           id: "step-1",
           type: "instruction",
           title: "Känna igen bedrägerier",
-            content: "Lär dig identifiera avancerade bedrägerier via SMS (smishing), e-post (phishing) och telefonsamtal (vishing). Bedragare använder olika trick: de kan låtsas vara från banken, skapa panik, eller be dig agera snabbt. Se upp för oväntade länkar, krav på snabba beslut, och personer som ber om personlig information eller BankID. Typiska trick är att skapa stress, hota med problem, eller erbjuda något som låter för bra för att vara sant.",
-            hint: "Dubbelkolla alltid avsändaren och fråga någon om du är osäker."
+          content: "Lär dig identifiera avancerade bedrägerier via SMS (smishing), e-post (phishing) och telefonsamtal (vishing). Bedragare använder olika trick: de kan låtsas vara från banken, skapa panik, eller be dig agera snabbt. Se upp för oväntade länkar, krav på snabba beslut, och personer som ber om personlig information eller BankID. Typiska trick är att skapa stress, hota med problem, eller erbjuda något som låter för bra för att vara sant.",
+          hint: "Dubbelkolla alltid avsändaren och fråga någon om du är osäker."
         },
         {
           id: "step-vishing-smishing",
@@ -884,170 +884,170 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
   ],
   en: [
     {
-        id: "smartphones-apps-indepth",
-        title: "Smartphones & Apps (In-Depth)",
-        description: "Learn more about settings, backup, storage, and cloud services for your smartphone.",
-        category: "basics",
-        difficulty: "intermediate",
-        duration: 25,
-        points: 200,
-        steps: [
-            {
-                id: "step-1",
-                type: "instruction",
-                title: "Settings for easier use",
-                content: "Discover settings that make your phone easier to use: larger text, dark mode, and simplified menus.",
-                hint: "You find these under 'Accessibility' and 'Display'."
-            },
-            {
-                id: "step-2",
-                type: "instruction",
-                title: "Backup and storage",
-                content: "Back up your photos and contacts so nothing is lost if your phone is misplaced. Use Google Drive, iCloud, or similar services.",
-                hint: "Automatic backup can be enabled in settings."
-            },
-            {
-                id: "step-3",
-                type: "instruction",
-                title: "Cloud services",
-                content: "With cloud services you can save and access your files from multiple devices. Examples: Google Drive, Dropbox, iCloud.",
-                hint: "You can share files and photos with family and friends."
-            },
-            {
-                id: "step-4",
-                type: "quiz",
-                title: "Check your knowledge",
-                content: "What is an advantage of using cloud services?",
-                validation: {
-                    correctAnswer: "You can access your files from multiple devices and share them easily"
-                }
-            }
-        ]
+      id: "smartphones-apps-indepth",
+      title: "Smartphones & Apps (In-Depth)",
+      description: "Learn more about settings, backup, storage, and cloud services for your smartphone.",
+      category: "basics",
+      difficulty: "intermediate",
+      duration: 25,
+      points: 200,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Settings for easier use",
+          content: "Discover settings that make your phone easier to use: larger text, dark mode, and simplified menus.",
+          hint: "You find these under 'Accessibility' and 'Display'."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Backup and storage",
+          content: "Back up your photos and contacts so nothing is lost if your phone is misplaced. Use Google Drive, iCloud, or similar services.",
+          hint: "Automatic backup can be enabled in settings."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Cloud services",
+          content: "With cloud services you can save and access your files from multiple devices. Examples: Google Drive, Dropbox, iCloud.",
+          hint: "You can share files and photos with family and friends."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Check your knowledge",
+          content: "What is an advantage of using cloud services?",
+          validation: {
+            correctAnswer: "You can access your files from multiple devices and share them easily"
+          }
+        }
+      ]
     },
     {
-        id: "advanced-digital-security",
-        title: "Advanced Digital Security (Certified Level)",
-        description: "Learn to recognize scams, create secure passwords, and understand phishing and other online risks.",
-        category: "security",
-        difficulty: "advanced",
-        duration: 30,
-        points: 300,
-        requiredLessons: ["scam-awareness", "password-safety"],
-        steps: [
-            {
-                id: "step-1",
-                type: "instruction",
-                title: "Recognizing scams",
-                content: "Learn to identify advanced scams via SMS, email, and phone calls. Watch out for unexpected links and urgent requests.",
-                hint: "Always double-check the sender and ask someone if you are unsure."
-            },
-            {
-                id: "step-2",
-                type: "instruction",
-                title: "Secure passwords",
-                content: "Use unique and strong passwords for every service. Enable two-factor authentication where possible.",
-                hint: "A password manager can help you keep track of all your passwords."
-            },
-            {
-                id: "step-3",
-                type: "instruction",
-                title: "Phishing and online risks",
-                content: "Phishing means scammers try to trick you into giving away information via fake websites or emails. Always check the web address and do not click suspicious links.",
-                hint: "Type the web address yourself instead of clicking links in emails."
-            },
-            {
-                id: "step-4",
-                type: "quiz",
-                title: "Check your knowledge",
-                content: "What is a sign of phishing?",
-                validation: {
-                    correctAnswer: "Unexpected links and requests for information"
-                }
-            }
-        ]
-    },
-            {
-              id: "digital-photos-memories",
-              title: "Digital photos & memories",
-              description: "Learn to scan old photos, organize pictures, and share with family.",
-              category: "basics",
-              difficulty: "beginner",
-              duration: 20,
-              points: 175,
-              steps: [
-                {
-                  id: "step-1",
-                  type: "instruction",
-                  title: "Scan old photos",
-                  content: "You can use your phone camera or a special app to scan old paper photos. Place the photo on a table with good light and take a picture!",
-                  hint: "There are apps that improve quality, e.g. Google PhotoScan."
-                },
-                {
-                  id: "step-2",
-                  type: "instruction",
-                  title: "Organize your pictures",
-                  content: "Create albums on your phone or computer to sort pictures. You can name albums by year, people, or events.",
-                  hint: "It will be easier to find pictures later!"
-                },
-                {
-                  id: "step-3",
-                  type: "instruction",
-                  title: "Share with family",
-                  content: "You can share pictures via email, SMS, or apps like Google Photos or WhatsApp. Choose who you want to share with and send!",
-                  hint: "Only share pictures you are comfortable with others seeing."
-                },
-                {
-                  id: "step-4",
-                  type: "quiz",
-                  title: "Check your knowledge",
-                  content: "What is a good way to organize pictures?",
-                  validation: {
-                    correctAnswer: "Create albums and sort by year or people"
-                  }
-                }
-              ]
-            },
+      id: "advanced-digital-security",
+      title: "Advanced Digital Security (Certified Level)",
+      description: "Learn to recognize scams, create secure passwords, and understand phishing and other online risks.",
+      category: "security",
+      difficulty: "advanced",
+      duration: 30,
+      points: 300,
+      requiredLessons: ["scam-awareness", "password-safety"],
+      steps: [
         {
-          id: "ai-everyday-life",
-          title: "AI for Everyday Life",
-          description: "What AI is, how to use it, and how to do so safely. Practical tools for daily life!",
-          category: "basics",
-          difficulty: "beginner",
-          duration: 20,
-          points: 175,
-          steps: [
-            {
-              id: "step-1",
-              type: "instruction",
-              title: "What is AI?",
-              content: "AI means artificial intelligence. It's computer programs that can help you with many things, like writing texts, planning trips, or finding information.",
-              hint: "AI is in many apps and services you already use!"
-            },
-            {
-              id: "step-2",
-              type: "instruction",
-              title: "AI in daily life",
-              content: "You can use AI to plan a trip, write a letter, translate languages, or get recipe ideas. Try asking an AI service for help!",
-              hint: "Examples: Google, ChatGPT, or voice assistants."
-            },
-            {
-              id: "step-3",
-              type: "instruction",
-              title: "Safe AI use",
-              content: "Be careful not to share personal information with AI services. Don't blindly trust everything AI says – double-check important things!",
-              hint: "Ask someone if you are unsure."
-            },
-            {
-              id: "step-4",
-              type: "quiz",
-              title: "Check your knowledge",
-              content: "What is important when using AI?",
-              validation: {
-                correctAnswer: "Don't share personal info and double-check important answers"
-              }
-            }
-          ]
+          id: "step-1",
+          type: "instruction",
+          title: "Recognizing scams",
+          content: "Learn to identify advanced scams via SMS, email, and phone calls. Watch out for unexpected links and urgent requests.",
+          hint: "Always double-check the sender and ask someone if you are unsure."
         },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Secure passwords",
+          content: "Use unique and strong passwords for every service. Enable two-factor authentication where possible.",
+          hint: "A password manager can help you keep track of all your passwords."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Phishing and online risks",
+          content: "Phishing means scammers try to trick you into giving away information via fake websites or emails. Always check the web address and do not click suspicious links.",
+          hint: "Type the web address yourself instead of clicking links in emails."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Check your knowledge",
+          content: "What is a sign of phishing?",
+          validation: {
+            correctAnswer: "Unexpected links and requests for information"
+          }
+        }
+      ]
+    },
+    {
+      id: "digital-photos-memories",
+      title: "Digital photos & memories",
+      description: "Learn to scan old photos, organize pictures, and share with family.",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 20,
+      points: 175,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Scan old photos",
+          content: "You can use your phone camera or a special app to scan old paper photos. Place the photo on a table with good light and take a picture!",
+          hint: "There are apps that improve quality, e.g. Google PhotoScan."
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "Organize your pictures",
+          content: "Create albums on your phone or computer to sort pictures. You can name albums by year, people, or events.",
+          hint: "It will be easier to find pictures later!"
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Share with family",
+          content: "You can share pictures via email, SMS, or apps like Google Photos or WhatsApp. Choose who you want to share with and send!",
+          hint: "Only share pictures you are comfortable with others seeing."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Check your knowledge",
+          content: "What is a good way to organize pictures?",
+          validation: {
+            correctAnswer: "Create albums and sort by year or people"
+          }
+        }
+      ]
+    },
+    {
+      id: "ai-everyday-life",
+      title: "AI for Everyday Life",
+      description: "What AI is, how to use it, and how to do so safely. Practical tools for daily life!",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 20,
+      points: 175,
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "What is AI?",
+          content: "AI means artificial intelligence. It's computer programs that can help you with many things, like writing texts, planning trips, or finding information.",
+          hint: "AI is in many apps and services you already use!"
+        },
+        {
+          id: "step-2",
+          type: "instruction",
+          title: "AI in daily life",
+          content: "You can use AI to plan a trip, write a letter, translate languages, or get recipe ideas. Try asking an AI service for help!",
+          hint: "Examples: Google, ChatGPT, or voice assistants."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Safe AI use",
+          content: "Be careful not to share personal information with AI services. Don't blindly trust everything AI says – double-check important things!",
+          hint: "Ask someone if you are unsure."
+        },
+        {
+          id: "step-4",
+          type: "quiz",
+          title: "Check your knowledge",
+          content: "What is important when using AI?",
+          validation: {
+            correctAnswer: "Don't share personal info and double-check important answers"
+          }
+        }
+      ]
+    },
     {
       id: "sms-basics",
       title: "Send your first SMS",
