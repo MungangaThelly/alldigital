@@ -14,7 +14,6 @@ export interface Lesson {
   steps: LessonStep[];
   requiredLessons?: string[]; // IDs of lessons that must be completed first
 }
-
 export interface LessonStep {
   id: string;
   type: "instruction" | "interactive" | "quiz";
@@ -55,6 +54,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       difficulty: "beginner",
       duration: 20,
       points: 200,
+    {
       steps: [
         {
           id: "step-1",
@@ -117,7 +117,6 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
     },
     {
       id: "os-update-ios",
-      title: "Uppdatera iPhone (iOS)",
       description: "Lär dig varför och hur du uppdaterar din iPhone steg för steg.",
       category: "basics",
       difficulty: "beginner",
@@ -166,6 +165,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           content: "Visa på storbild/projektor, ha utskrivna steg med bilder, låt deltagarna göra det på sina egna telefoner, ha extra stödpersoner i rummet.",
         },
         {
+      {
           id: "elderly-tips-2",
           type: "instruction",
           title: "Säkerhet",
