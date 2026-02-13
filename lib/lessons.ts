@@ -48,6 +48,99 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "os-update-android",
+      title: "Uppdatera Android-telefon",
+      description: "Lär dig varför och hur du uppdaterar din Android-telefon steg för steg.",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 15,
+      points: 120,
+      steps: [
+        {
+          id: "os-update-why",
+          type: "instruction",
+          title: "Varför är uppdateringar viktiga?",
+          content: "Uppdateringar skyddar mot bedrägerier och virus, gör att appar fungerar bättre, minskar fel och är viktiga för BankID och 1177. Uppdatering är som att laga och förbättra telefonen.",
+        },
+        {
+          id: "os-update-android-step",
+          type: "instruction",
+          title: "Steg-för-steg: Uppdatera Android",
+          content: "1. Öppna Inställningar\n2. Tryck på System\n3. Välj Programuppdatering\n4. Tryck på Sök efter uppdatering\n5. Välj Ladda ner och installera\n\nViktigt: Anslut till Wi-Fi, minst 50% batteri, det kan ta 10–30 minuter, telefonen startar om själv.",
+        },
+        {
+          id: "os-update-android-extra",
+          type: "instruction",
+          title: "Extra tips",
+          content: "Sätt på automatiska uppdateringar, se vilken version du har, och vad du gör om minnet är fullt.",
+        },
+        {
+          id: "os-update-android-safety",
+          type: "instruction",
+          title: "Säkerhet",
+          content: "Uppdatera alltid via Inställningar, aldrig via länkar i SMS eller e-post.",
+        },
+      ],
+    },
+    {
+      id: "os-update-ios",
+      title: "Uppdatera iPhone (iOS)",
+      description: "Lär dig varför och hur du uppdaterar din iPhone steg för steg.",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 15,
+      points: 120,
+      steps: [
+        {
+          id: "os-update-why",
+          type: "instruction",
+          title: "Varför är uppdateringar viktiga?",
+          content: "Uppdateringar skyddar mot bedrägerier och virus, gör att appar fungerar bättre, minskar fel och är viktiga för BankID och 1177. Uppdatering är som att laga och förbättra telefonen.",
+        },
+        {
+          id: "os-update-ios-step",
+          type: "instruction",
+          title: "Steg-för-steg: Uppdatera iPhone",
+          content: "1. Öppna Inställningar\n2. Tryck på Allmänt\n3. Välj Programuppdatering\n4. Tryck på Hämta och installera\n\nViktigt: Anslut till Wi-Fi, minst 50% batteri, det kan ta 10–30 minuter, telefonen startar om själv.",
+        },
+        {
+          id: "os-update-ios-extra",
+          type: "instruction",
+          title: "Extra tips",
+          content: "Slå på automatiska uppdateringar, se vilken version du har, och vad du gör om minnet är fullt.",
+        },
+        {
+          id: "os-update-ios-safety",
+          type: "instruction",
+          title: "Säkerhet",
+          content: "Uppdatera alltid via Inställningar, aldrig via länkar i SMS eller e-post.",
+        },
+      ],
+    },
+    {
+      id: "os-update-elderly-tips",
+      title: "Tips för äldre deltagare",
+      description: "Så gör du OS-uppdatering tryggt och enkelt i grupp.",
+      category: "basics",
+      difficulty: "beginner",
+      duration: 10,
+      points: 80,
+      steps: [
+        {
+          id: "elderly-tips-1",
+          type: "instruction",
+          title: "Gör så här i grupp",
+          content: "Visa på storbild/projektor, ha utskrivna steg med bilder, låt deltagarna göra det på sina egna telefoner, ha extra stödpersoner i rummet.",
+        },
+        {
+          id: "elderly-tips-2",
+          type: "instruction",
+          title: "Säkerhet",
+          content: "Man ska inte klicka på uppdateringslänkar i SMS. Uppdateringar görs via Inställningar, inte via meddelanden.",
+        },
+      ],
+    },
+    {
       id: "safe-social-networks",
       title: "Sociala nätverk med trygghet",
       description: "Många äldre vill använda sociala medier, men är osäkra. Lär dig skapa konto, logga in, sekretessinställningar, dela foto/meddelanden tryggt och undvika scam-kontakter.",
