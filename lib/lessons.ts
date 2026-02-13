@@ -3100,7 +3100,6 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       ],
     },
   ],
-};
 
 const categoryNames: Record<Locale, Record<LessonCategory, string>> = {
   sv: {
