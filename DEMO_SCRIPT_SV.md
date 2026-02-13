@@ -1,5 +1,7 @@
 # Tillsammans digitalt - Demo Script (Swedish)
 
+Läs mer om projektet på vår hemsida: https://www.nuhar.se
+
 ## Scene 1: Introduktion (0:00-0:15)
 **[Show homepage with hero section]**
 

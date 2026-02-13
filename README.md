@@ -35,6 +35,9 @@ Run the development server:
 npm run dev
 ```
 
+
+Läs mer om projektet på vår hemsida: https://www.nuhar.se
+
 Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 ## Project Structure

@@ -1,5 +1,8 @@
 # Tillsammans digitalt - Quick Start Guide
 
+Läs mer om projektet på vår hemsida: https://www.nuhar.se
+# Tillsammans digitalt - Quick Start Guide
+
 ## 🌍 Access Policy
 
 Core access is always free. Safety-critical content is never paywalled. Organizations pay for management and reporting. Optional supporter donations are welcome. Revenue sustains free access.
