@@ -48,6 +48,40 @@ export interface Achievement {
 const lessonsByLocale: Record<Locale, Lesson[]> = {
   sv: [
     {
+      id: "scam-awareness",
+      title: "Upptäck bedrägerier",
+      description: "Lär dig att identifiera och undvika vanliga bedrägerier via SMS och e-post.",
+      category: "security",
+      difficulty: "intermediate",
+      duration: 20,
+      points: 200,
+      requiredLessons: ["sms-basics"],
+      steps: [
+        {
+          id: "step-1",
+          type: "instruction",
+          title: "Viktigt: Var försiktig",
+          content: "Bedragare försöker lura människor med falska meddelanden. Vi lär oss hur du känner igen dem. Kom ihåg: Din bank ringer ALDRIG och ber om koder eller lösenord!",
+          hint: "Detta kan skydda dig från att förlora pengar."
+        },
+        {
+          id: "step-2",
+          type: "interactive",
+          title: "Granska meddelandet",
+          content: "Titta på detta SMS. Är det äkta eller falskt? Leta efter varningssignaler.",
+          component: "ScamDetector",
+          hint: "Kontrollera avsändaren, språket och om de ber om personlig information."
+        },
+        {
+          id: "step-3",
+          type: "instruction",
+          title: "Bra jobbat!",
+          content: "Nu vet du hur du upptäcker bedrägerier. Kom ihåg: Om något känns fel, är det troligen det. Ring alltid din bank direkt med numret på ditt kort om du är osäker.",
+          hint: "Spara detta nummer i din telefon: bankens kundtjänst."
+        }
+      ]
+    },
+    {
       id: "os-update-android",
       title: "Uppdatera Android-telefon",
       description: "Lär dig varför och hur du uppdaterar din Android-telefon steg för steg.",
