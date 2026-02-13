@@ -276,7 +276,7 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       difficulty: "advanced",
       duration: 30,
       points: 300,
-      requiredLessons: ["scam-awareness", "password-safety"],
+      // requiredLessons removed to make lesson always visible
       steps: [
         {
           id: "step-1",
