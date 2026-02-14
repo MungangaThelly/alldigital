@@ -163,29 +163,6 @@ export type Dictionary = {
     supportWeekend: string;
     supportNote: string;
   };
-  lesson: {
-  notFoundTitle: "Lektion hittades inte",
-  backToLessons: "Tillbaka till lektioner",
-  congratsTitle: "Grattis!",
-  completedLessonPrefix: "Du har slutfört lektionen",
-  earnedLabel: "Du har tjänat",
-  moreLessons: "Fler lektioner",
-  seeProgress: "Se framsteg",
-  stepLabel: "Steg",
-  stepOf: "av",
-  showHint: "Visa tips",
-  hideHint: "Dölj tips",
-  previous: "Föregående",
-  next: "Nästa",
-  nextStep: "Nästa steg",
-  finish: "Avsluta",
-
-  supportPopup: {
-    title: "Stöd oss med Swish",
-    dontShow: "Visa inte igen",
-    close: "Stäng",
-  },
-},
 
   interactive: {
     phoneSimulator: {
