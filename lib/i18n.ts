@@ -250,10 +250,13 @@ export type Dictionary = {
 
 const dictionaries: Record<Locale, Dictionary> = {
   sv: {
-    supportPopup: {
-      title: "Stöd oss med Swish",
-      dontShow: "Visa inte igen",
-      close: "Stäng",
+    lesson: {
+      // ...existing lesson keys...
+      supportPopup: {
+        title: "Stöd oss med Swish",
+        dontShow: "Visa inte igen",
+        close: "Stäng",
+      },
     },
     lesson: {
       supportPopup: {
@@ -583,10 +586,13 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   en: {
-    supportPopup: {
-      title: "Support us with Swish",
-      dontShow: "Don't show again",
-      close: "Close",
+    lesson: {
+      // ...existing lesson keys...
+      supportPopup: {
+        title: "Support us with Swish",
+        dontShow: "Don't show again",
+        close: "Close",
+      },
     },
     lesson: {
       supportPopup: {
