@@ -152,9 +152,13 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
       {/* Lesson Content */}
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-xl shadow-lg border-2 border-gray-200 p-8 mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">{currentStep.title}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            {typeof currentStep.title === "function" ? currentStep.title(t) : currentStep.title}
+          </h2>
           <div className="prose prose-lg max-w-none mb-6">
-            <p className="text-xl text-gray-700 leading-relaxed">{currentStep.content}</p>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              {typeof currentStep.content === "function" ? currentStep.content(t) : currentStep.content}
+            </p>
           </div>
 
           {/* Speech Player */}

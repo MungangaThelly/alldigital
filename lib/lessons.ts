@@ -17,8 +17,8 @@ export interface Lesson {
 export interface LessonStep {
   id: string;
   type: "instruction" | "interactive" | "quiz";
-  title: string;
-  content: string;
+  title: string | ((t: import("@/lib/i18n").Dictionary) => string);
+  content: string | ((t: import("@/lib/i18n").Dictionary) => string);
   hint?: string;
   component?: string; // Component to render for interactive steps
   validation?: {
