@@ -23,12 +23,13 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
   closeLabel,
 }) => {
   const [show, setShow] = useState(false);
-  const [dontShow, setDontShow] = useState(false);
+  const [dontShowChecked, setDontShowChecked] = useState(false);
 
   useEffect(() => {
     const dontShowValue = localStorage.getItem(DONT_SHOW_KEY);
     if (dontShowValue === "true") {
       setShow(false);
+      setDontShowChecked(true);
       return;
     }
     const lastShown = localStorage.getItem(STORAGE_KEY);
@@ -44,7 +45,7 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
   };
 
   const handleDontShow = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setDontShow(e.target.checked);
+    setDontShowChecked(e.target.checked);
     localStorage.setItem(DONT_SHOW_KEY, e.target.checked ? "true" : "false");
   };
 
@@ -80,7 +81,7 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
           <label style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
             <input
               type="checkbox"
-              checked={dontShow}
+              checked={dontShowChecked}
               onChange={handleDontShow}
               style={{ marginRight: 8 }}
             />
