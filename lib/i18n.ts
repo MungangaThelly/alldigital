@@ -513,7 +513,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       backToLessons: "Tillbaka till lektioner",
       congratsTitle: "Grattis!",
       completedLessonPrefix: "Du har slutfört lektionen",
-      earnedLabel: "Du tjänat:",
+      earnedLabel: "Du tjänat",
       moreLessons: "Fler lektioner",
       seeProgress: "Se dina framsteg",
       stepLabel: "Steg",
