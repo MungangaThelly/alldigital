@@ -159,11 +159,11 @@ export type Dictionary = {
     supportNote: string;
   };
   lesson: {
-      supportPopup: {
-        title: string;
-        dontShow: string;
-        close: string;
-      };
+    supportPopup: {
+      title: string;
+      dontShow: string;
+      close: string;
+    };
     notFoundTitle: string;
     backToLessons: string;
     congratsTitle: string;

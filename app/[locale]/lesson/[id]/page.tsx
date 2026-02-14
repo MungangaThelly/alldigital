@@ -119,9 +119,9 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
           qrCodeUrl={supportConfig.qrCodeUrl}
           message={supportConfig.messages?.[locale] || supportConfig.messages?.sv || ""}
           frequencyDays={30}
-          title={t.supportPopup.title}
-          dontShow={t.supportPopup.dontShow}
-          closeLabel={t.supportPopup.close}
+          title={t.lesson.supportPopup.title}
+          dontShow={t.lesson.supportPopup.dontShow}
+          closeLabel={t.lesson.supportPopup.close}
         />
       )}
       <div className="container mx-auto px-4 py-8">
