@@ -164,25 +164,27 @@ export type Dictionary = {
     supportNote: string;
   };
   lesson: {
-    supportPopup: {
-      title: string;
-      dontShow: string;
-      close: string;
-    };
-    notFoundTitle: string;
-    backToLessons: string;
-    congratsTitle: string;
-    completedLessonPrefix: string;
-    earnedLabel: string;
-    moreLessons: string;
-    seeProgress: string;
-    stepLabel: string;
-    stepOf: string;
-    showHint: string;
-    previous: string;
-    next: string;
-    finish: string;
-  };
+  notFoundTitle: "Lektion hittades inte",
+  backToLessons: "Tillbaka till lektioner",
+  congratsTitle: "Grattis!",
+  completedLessonPrefix: "Du har slutfört lektionen",
+  earnedLabel: "Du har tjänat",
+  moreLessons: "Fler lektioner",
+  seeProgress: "Se framsteg",
+  stepLabel: "Steg",
+  stepOf: "av",
+  showHint: "Visa tips",
+  hideHint: "Dölj tips",
+  nextStep: "Nästa steg",
+  finish: "Avsluta",
+
+  supportPopup: {
+    title: "Stöd oss med Swish",
+    dontShow: "Visa inte igen",
+    close: "Stäng",
+  },
+},
+
   interactive: {
     phoneSimulator: {
       instruction: string;
