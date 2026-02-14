@@ -178,7 +178,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
               <SupportPopup
                 swishNumber="070-481 03 77"
                 qrCodeUrl="/swish-qr.png"
-                message={t.lesson.supportPopup?.message || "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
+                message={"Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
                 frequencyDays={0}
                 title={t.lesson.supportPopup?.title || ""}
                 dontShow={t.lesson.supportPopup?.dontShow || ""}
