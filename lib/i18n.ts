@@ -159,6 +159,11 @@ export type Dictionary = {
     supportNote: string;
   };
   lesson: {
+      supportPopup: {
+        title: string;
+        dontShow: string;
+        close: string;
+      };
     notFoundTitle: string;
     backToLessons: string;
     congratsTitle: string;
@@ -240,6 +245,11 @@ export type Dictionary = {
 
 const dictionaries: Record<Locale, Dictionary> = {
   sv: {
+        supportPopup: {
+          title: "Stöd oss med Swish",
+          dontShow: "Visa inte igen",
+          close: "Stäng",
+        },
     meta: {
       title: "Tillsammans digitalt - Lär dig digitalt i din takt",
       description: "En trygg och enkel plattform för att lära sig digital kommunikation. Ingen stress, ingen jargong, bara stöd.",
@@ -560,6 +570,11 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   en: {
+        supportPopup: {
+          title: "Support us with Swish",
+          dontShow: "Don't show again",
+          close: "Close",
+        },
     meta: {
       title: "Tillsammans digitalt - Learn digital skills at your pace",
       description: "A safe and simple platform to learn digital communication. No stress, no jargon, just support.",
@@ -880,6 +895,11 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   ar: {
+        supportPopup: {
+          title: "ادعمنا عبر Swish",
+          dontShow: "لا تظهر مرة أخرى",
+          close: "إغلاق",
+        },
     meta: {
       title: "Tillsammans digitalt - تعلّم المهارات الرقمية على وتيرتك",
       description: "منصة آمنة وبسيطة لتعلّم التواصل الرقمي. بلا توتر، بلا مصطلحات معقدة، فقط دعم.",
@@ -1202,6 +1222,11 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   ti: {
+        supportPopup: {
+          title: "Nefasitna Swish ብምምሕዳር",
+          dontShow: "ኣይትረኣየን እንደገና",
+          close: "ዝግብን",
+        },
     meta: {
       title: "Tillsammans digitalt - ብእርስካ ፍጥነት ዲጂታል ምምሃር",
       description: "ዲጂታል ግንኙነት ንምምሃር ደሓን እና ቀሊል መድረኽ። ጭንቀት የለን፣ መተሓሳሰቢ ቃላት የለን፣ ድጋፍ ብብቂ ኣሎ።",
@@ -1524,6 +1549,11 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   fr: {
+        supportPopup: {
+          title: "Soutenez-nous avec Swish",
+          dontShow: "Ne plus afficher",
+          close: "Fermer",
+        },
     meta: {
       title: "Tillsammans digitalt - Apprenez le numérique à votre rythme",
       description: "Une plateforme sûre et simple pour apprendre la communication numérique. Sans stress, sans jargon, juste du soutien.",

@@ -119,6 +119,9 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
           qrCodeUrl={supportConfig.qrCodeUrl}
           message={supportConfig.message}
           frequencyDays={30}
+          title={t.supportPopup.title}
+          dontShow={t.supportPopup.dontShow}
+          closeLabel={t.supportPopup.close}
         />
       )}
       <div className="container mx-auto px-4 py-8">
@@ -175,8 +178,11 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
               <SupportPopup
                 swishNumber="070-481 03 77"
                 qrCodeUrl="/swish-qr.png"
-                message="Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"
+                message={t.lesson?.supportPopupMessage || "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
                 frequencyDays={0}
+                title={t.supportPopup.title}
+                dontShow={t.supportPopup.dontShow}
+                closeLabel={t.supportPopup.close}
               />
               <button
                 className="mt-6 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg text-lg font-semibold"

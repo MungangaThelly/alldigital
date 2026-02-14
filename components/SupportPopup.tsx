@@ -5,6 +5,9 @@ interface SupportPopupProps {
   qrCodeUrl: string;
   message: string;
   frequencyDays?: number; // default: 30
+  title: string;
+  dontShow: string;
+  closeLabel: string;
 }
 
 const STORAGE_KEY = "support_popup_last_shown";
@@ -15,6 +18,9 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
   qrCodeUrl,
   message,
   frequencyDays = 30,
+  title,
+  dontShow,
+  closeLabel,
 }) => {
   const [show, setShow] = useState(false);
   const [dontShow, setDontShow] = useState(false);
@@ -65,7 +71,7 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
         textAlign: "center",
         boxShadow: "0 2px 16px rgba(0,0,0,0.2)",
       }}>
-        <h2>Stöd oss med Swish</h2>
+        <h2>{title}</h2>
         <p>{message}</p>
         <p style={{ fontWeight: "bold", margin: "12px 0 0 0" }}>Du väljer själv beloppet!</p>
         <img src={qrCodeUrl} alt="Swish QR-kod" style={{ width: 180, margin: "16px auto" }} />
@@ -78,13 +84,13 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
               onChange={handleDontShow}
               style={{ marginRight: 8 }}
             />
-            Visa inte igen
+            {dontShow}
           </label>
           <button
             style={{ padding: "8px 24px", borderRadius: 6, background: "#6f2da8", color: "#fff", border: "none", fontSize: 16 }}
             onClick={handleClose}
           >
-            Stäng
+            {closeLabel}
           </button>
         </div>
       </div>
