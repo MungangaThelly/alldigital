@@ -261,6 +261,14 @@ const dictionaries: Record<Locale, Dictionary> = {
       completedLessonPrefix: "Du har slutfört lektionen",
       earnedLabel: "Du har tjänat",
       moreLessons: "Fler lektioner",
+      seeProgress: "Se framsteg",
+      stepLabel: "Steg",
+      stepOf: "av",
+      showHint: "Visa tips",
+      hideHint: "Dölj tips",
+      previous: "Föregående",
+      next: "Nästa",
+      nextStep: "Nästa steg",
       finish: "Avsluta",
 
       supportPopup: {
@@ -521,7 +529,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       showHint: "Visa tips",
       previous: "Föregående",
       next: "Nästa",
-      finish: "Slutför",
+      finish: "Avsluta",
     },
     interactive: {
       phoneSimulator: {
