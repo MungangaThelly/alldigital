@@ -276,7 +276,7 @@ const dictionaries: Record<Locale, Dictionary> = {
         dontShow: "Visa inte igen",
         close: "Stäng",
       },
-    },
+    } as const,
 
     meta: {
       title: "Tillsammans digitalt - Lär dig digitalt i din takt",
