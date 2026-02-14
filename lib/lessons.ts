@@ -401,6 +401,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 175,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Skanna gamla foton",
@@ -441,6 +448,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 20,
       points: 175,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "step-1",
           type: "instruction",
