@@ -56,6 +56,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 200,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Viktigt: Håll dig säker",
@@ -88,6 +95,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 15,
       points: 120,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "os-update-why",
           type: "instruction",
@@ -221,6 +235,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 180,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Använda Zoom, Teams och FaceTime",
@@ -260,6 +281,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 25,
       points: 200,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "swish-support-popup",
           type: "instruction",
