@@ -180,9 +180,9 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                 qrCodeUrl="/swish-qr.png"
                 message={t.lesson?.supportPopupMessage || "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
                 frequencyDays={0}
-                title={t.supportPopup.title}
-                dontShow={t.supportPopup.dontShow}
-                closeLabel={t.supportPopup.close}
+                title={t.lesson.supportPopup.title}
+                dontShow={t.lesson.supportPopup.dontShow}
+                closeLabel={t.lesson.supportPopup.close}
               />
               <button
                 className="mt-6 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg text-lg font-semibold"
