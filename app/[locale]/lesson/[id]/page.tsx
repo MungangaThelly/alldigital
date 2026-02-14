@@ -164,8 +164,8 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
           {/* Speech Player */}
           <div className="mb-8">
             <SpeechPlayer
-              text={currentStep.content}
-              label={`${t.lesson.stepLabel} ${currentStepIndex + 1}: ${currentStep.title}`}
+              text={typeof currentStep.content === "function" ? currentStep.content(t) : currentStep.content}
+              label={`${t.lesson.stepLabel} ${currentStepIndex + 1}: ${typeof currentStep.title === "function" ? currentStep.title(t) : currentStep.title}`}
               lang={locale}
               labels={{
                 play: t.lessons.speechPlay,
