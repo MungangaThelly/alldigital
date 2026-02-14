@@ -36,6 +36,11 @@ export function withLocale(locale: Locale, path: string): string {
 }
 
 export type Dictionary = {
+    supportPopup: {
+      title: string;
+      dontShow: string;
+      close: string;
+    };
   meta: {
     title: string;
     description: string;
