@@ -119,9 +119,9 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
           qrCodeUrl={supportConfig.qrCodeUrl}
           message={supportConfig.messages?.[locale] || supportConfig.messages?.sv || ""}
           frequencyDays={30}
-          title={t.lesson.supportPopup.title}
-          dontShow={t.lesson.supportPopup.dontShow}
-          closeLabel={t.lesson.supportPopup.close}
+          title={t.lesson.supportPopup?.title || ""}
+          dontShow={t.lesson.supportPopup?.dontShow || ""}
+          closeLabel={t.lesson.supportPopup?.close || ""}
         />
       )}
       <div className="container mx-auto px-4 py-8">
@@ -178,11 +178,11 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
               <SupportPopup
                 swishNumber="070-481 03 77"
                 qrCodeUrl="/swish-qr.png"
-                message={t.lesson?.supportPopupMessage || "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
+                message={t.lesson.supportPopup?.message || "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
                 frequencyDays={0}
-                title={t.lesson.supportPopup.title}
-                dontShow={t.lesson.supportPopup.dontShow}
-                closeLabel={t.lesson.supportPopup.close}
+                title={t.lesson.supportPopup?.title || ""}
+                dontShow={t.lesson.supportPopup?.dontShow || ""}
+                closeLabel={t.lesson.supportPopup?.close || ""}
               />
               <button
                 className="mt-6 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg text-lg font-semibold"
