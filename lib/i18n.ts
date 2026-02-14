@@ -36,6 +36,28 @@ export function withLocale(locale: Locale, path: string): string {
 }
 
 export type Dictionary = {
+      lesson: {
+        notFoundTitle: string;
+        backToLessons: string;
+        congratsTitle: string;
+        completedLessonPrefix: string;
+        earnedLabel: string;
+        moreLessons: string;
+        seeProgress: string;
+        stepLabel: string;
+        stepOf: string;
+        showHint: string;
+        hideHint: string;
+        previous: string;
+        next: string;
+        nextStep: string;
+        finish: string;
+        supportPopup: {
+          title: string;
+          dontShow: string;
+          close: string;
+        };
+      };
     supportPopup: {
       title: string;
       dontShow: string;
