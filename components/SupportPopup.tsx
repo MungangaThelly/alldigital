@@ -84,6 +84,8 @@ const SupportPopup: React.FC<SupportPopupProps> = ({
               checked={dontShowChecked}
               onChange={handleDontShow}
               style={{ marginRight: 8 }}
+              id="support-popup-dont-show"
+              name="support-popup-dont-show"
             />
             {dontShow}
           </label>
