@@ -175,6 +175,8 @@ export type Dictionary = {
   stepOf: "av",
   showHint: "Visa tips",
   hideHint: "Dölj tips",
+  previous: "Föregående",
+  next: "Nästa",
   nextStep: "Nästa steg",
   finish: "Avsluta",
 
