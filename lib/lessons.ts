@@ -196,6 +196,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 180,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: "Support us with Swish",
+          content: "Support us with Swish!",
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Skapa konto och logga in",
@@ -338,6 +345,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 300,
       // requiredLessons removed to make lesson always visible
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: "Support us with Swish",
+          content: "Support us with Swish!",
+          component: "SupportPopup"
+        },
         {
           id: "step-1",
           type: "instruction",
