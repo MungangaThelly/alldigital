@@ -261,7 +261,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       completedLessonPrefix: "Du har slutfört lektionen",
       earnedLabel: "Du har tjänat",
       moreLessons: "Fler lektioner",
-      seeProgress: "Se framsteg",
+      seeProgress: "Se dina framsteg",
       stepLabel: "Steg",
       stepOf: "av",
       showHint: "Visa tips",
