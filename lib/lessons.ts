@@ -63,6 +63,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           component: "SupportPopup"
         },
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Viktigt: Håll dig säker",
@@ -95,6 +102,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 15,
       points: 120,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "swish-support-popup",
           type: "instruction",
@@ -138,6 +152,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 120,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "os-update-why",
           type: "instruction",
           title: "Varför är uppdateringar viktiga?",
@@ -173,6 +194,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 80,
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "elderly-tips-1",
           type: "instruction",
           title: "Gör så här i grupp",
@@ -195,6 +223,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 20,
       points: 180,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "swish-support-popup",
           type: "instruction",
@@ -241,6 +276,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 20,
       points: 180,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "swish-support-popup",
           type: "instruction",
@@ -298,6 +340,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
         {
           id: "swish-support-popup",
           type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
+          id: "swish-support-popup",
+          type: "instruction",
           title: "Stöd oss med Swish!",
           content: "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till 123 456 78 90. Tack för ditt stöd!",
           hint: "Ditt stöd gör skillnad för många!",
@@ -345,6 +394,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 300,
       // requiredLessons removed to make lesson always visible
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "swish-support-popup",
           type: "instruction",
@@ -408,6 +464,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           component: "SupportPopup"
         },
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Skanna gamla foton",
@@ -456,6 +519,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
           component: "SupportPopup"
         },
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Vad är AI?",
@@ -496,6 +566,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       duration: 10,
       points: 100,
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: t => t.supportPopup.title,
+          content: t => t.supportPopup.title,
+          component: "SupportPopup"
+        },
         {
           id: "step-1",
           type: "instruction",
