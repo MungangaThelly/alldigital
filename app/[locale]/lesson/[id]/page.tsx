@@ -117,7 +117,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
         <SupportPopup
           swishNumber={supportConfig.swishNumber}
           qrCodeUrl={supportConfig.qrCodeUrl}
-          message={supportConfig.message}
+          message={supportConfig.messages?.[locale] || supportConfig.messages?.sv || ""}
           frequencyDays={30}
           title={t.supportPopup.title}
           dontShow={t.supportPopup.dontShow}

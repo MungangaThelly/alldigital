@@ -1,1 +1,11 @@
-{"swishNumber": "070-481 03 77", "qrCodeUrl": "/swish-qr.png", "message": "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!"}
+{
+	"swishNumber": "070-481 03 77",
+	"qrCodeUrl": "/swish-qr.png",
+	"messages": {
+		"sv": "Hjälp oss hålla plattformen igång och uppdaterad. Swisha valfritt bidrag till numret eller scanna QR-koden. Tack för ditt stöd!",
+		"en": "Help us keep the platform running and updated. Swish any amount to the number or scan the QR code. Thank you for your support!",
+		"ar": "ساعدنا في الحفاظ على المنصة وتشغيلها. أرسل أي مبلغ عبر Swish إلى الرقم أو امسح رمز QR. شكرًا لدعمك!",
+		"ti": "እባክኩም መድረኹን ንምምሕዳር ናይ Swish ብዝተፈላለየ መጠን ኣብ ቁጽሪ ወይ ናብ QR ኮድ ስካን ግበሩ። የቐንየለይ ንድገትኩም!",
+		"fr": "Aidez-nous à maintenir la plateforme en fonctionnement et à jour. Faites un don via Swish au numéro ou scannez le QR code. Merci pour votre soutien !"
+	}
+}
