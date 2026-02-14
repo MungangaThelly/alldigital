@@ -245,11 +245,14 @@ export type Dictionary = {
 
 const dictionaries: Record<Locale, Dictionary> = {
   sv: {
-        supportPopup: {
-          title: "Stöd oss med Swish",
-          dontShow: "Visa inte igen",
-          close: "Stäng",
-        },
+    lesson: {
+      supportPopup: {
+        title: "Stöd oss med Swish",
+        dontShow: "Visa inte igen",
+        close: "Stäng",
+      },
+      // ...existing lesson keys...
+    },
     meta: {
       title: "Tillsammans digitalt - Lär dig digitalt i din takt",
       description: "En trygg och enkel plattform för att lära sig digital kommunikation. Ingen stress, ingen jargong, bara stöd.",
@@ -570,11 +573,14 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   en: {
-        supportPopup: {
-          title: "Support us with Swish",
-          dontShow: "Don't show again",
-          close: "Close",
-        },
+    lesson: {
+      supportPopup: {
+        title: "Support us with Swish",
+        dontShow: "Don't show again",
+        close: "Close",
+      },
+      // ...existing lesson keys...
+    },
     meta: {
       title: "Tillsammans digitalt - Learn digital skills at your pace",
       description: "A safe and simple platform to learn digital communication. No stress, no jargon, just support.",
