@@ -250,23 +250,28 @@ export type Dictionary = {
 
 const dictionaries: Record<Locale, Dictionary> = {
   sv: {
-    supportPopup: {
-      title: "Stöd oss med Swish",
-      dontShow: "Visa inte igen",
-      close: "Stäng",
-    },
     lesson: {
+      notFoundTitle: "Lektion hittades inte",
+      backToLessons: "Tillbaka till lektioner",
+      congratsTitle: "Grattis!",
+      completedLessonPrefix: "Du har slutfört lektionen",
+      earnedLabel: "Du har tjänat",
+      moreLessons: "Fler lektioner",
+      finish: "Avsluta",
+
       supportPopup: {
         title: "Stöd oss med Swish",
         dontShow: "Visa inte igen",
         close: "Stäng",
       },
-      // ...existing lesson keys...
     },
+
     meta: {
       title: "Tillsammans digitalt - Lär dig digitalt i din takt",
-      description: "En trygg och enkel plattform för att lära sig digital kommunikation. Ingen stress, ingen jargong, bara stöd.",
+      description:
+        "En trygg och enkel plattform för att lära sig digital kommunikation. Ingen stress, ingen jargong, bara stöd.",
     },
+
     nav: {
       home: "Hem",
       lessons: "Lektioner",
@@ -275,6 +280,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       about: "Om",
       languageLabel: "Språk",
     },
+
     footer: {
       copyright: "© 2026 IT-Weor AB. Alla rättigheter förbehållna.",
       tagline: "En trygg plats att lära sig digitalt 🔒",
