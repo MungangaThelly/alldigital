@@ -1334,6 +1334,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       requiredLessons: ["bankid-intro"],
       steps: [
         {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: "Support us with Swish",
+          content: "Support us with Swish!",
+          component: "SupportPopup"
+        },
+        {
           id: "step-1",
           type: "instruction",
           title: "Swish - Sweden's easiest payment",
@@ -1803,6 +1810,13 @@ const lessonsByLocale: Record<Locale, Lesson[]> = {
       points: 225,
       requiredLessons: ["bankid-intro"],
       steps: [
+        {
+          id: "swish-support-popup",
+          type: "instruction",
+          title: "ادعمنا عبر Swish",
+          content: "ادعمنا عبر Swish!",
+          component: "SupportPopup"
+        },
         {
           id: "step-1",
           type: "instruction",
