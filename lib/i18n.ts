@@ -36,33 +36,33 @@ export function withLocale(locale: Locale, path: string): string {
 }
 
 export type Dictionary = {
-      lesson: {
-        notFoundTitle: string;
-        backToLessons: string;
-        congratsTitle: string;
-        completedLessonPrefix: string;
-        earnedLabel: string;
-        moreLessons: string;
-        seeProgress: string;
-        stepLabel: string;
-        stepOf: string;
-        showHint: string;
-        hideHint: string;
-        previous: string;
-        next: string;
-        nextStep: string;
-        finish: string;
-        supportPopup: {
-          title: string;
-          dontShow: string;
-          close: string;
-        };
-      };
+  lesson: {
+    notFoundTitle: string;
+    backToLessons: string;
+    congratsTitle: string;
+    completedLessonPrefix: string;
+    earnedLabel: string;
+    moreLessons: string;
+    seeProgress: string;
+    stepLabel: string;
+    stepOf: string;
+    showHint: string;
+    hideHint: string;
+    previous: string;
+    next: string;
+    nextStep: string;
+    finish: string;
     supportPopup: {
       title: string;
       dontShow: string;
       close: string;
     };
+  };
+  supportPopup: {
+    title: string;
+    dontShow: string;
+    close: string;
+  };
   meta: {
     title: string;
     description: string;
@@ -185,7 +185,6 @@ export type Dictionary = {
     supportWeekend: string;
     supportNote: string;
   };
-
   interactive: {
     phoneSimulator: {
       instruction: string;
@@ -269,20 +268,22 @@ const dictionaries: Record<Locale, Dictionary> = {
       next: "Nästa",
       nextStep: "Nästa steg",
       finish: "Avsluta",
-
       supportPopup: {
         title: "Stöd oss med Swish",
         dontShow: "Visa inte igen",
         close: "Stäng",
       },
-    } as const,
-
+    },
+    supportPopup: {
+      title: "Stöd oss med Swish",
+      dontShow: "Visa inte igen",
+      close: "Stäng",
+    },
     meta: {
       title: "Tillsammans digitalt - Lär dig digitalt i din takt",
       description:
         "En trygg och enkel plattform för att lära sig digital kommunikation. Ingen stress, ingen jargong, bara stöd.",
     },
-
     nav: {
       home: "Hem",
       lessons: "Lektioner",
@@ -291,7 +292,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       about: "Om",
       languageLabel: "Språk",
     },
-
     footer: {
       copyright: "© 2026 IT-Weor AB. Alla rättigheter förbehållna.",
       tagline: "En trygg plats att lära sig digitalt 🔒",
@@ -335,27 +335,27 @@ const dictionaries: Record<Locale, Dictionary> = {
       ctaTitle: "Redo att ta första steget?",
       ctaSubtitle: "Börja idag. Kärnan är alltid gratis.",
       ctaButton: "Starta din resa",
-          testimonialsTitle: "Vad andra säger",
-          testimonials: [
-            {
-              name: "Karin",
-              age: "72 år",
-              quote: "Jag var livsrädd för telefonen förut. Nu Swishar jag till barnbarnen och videochattar varje vecka!",
-              achievement: "Genomförde 5 lektioner",
-            },
-            {
-              name: "Lars",
-              age: "68 år",
-              quote: "Tillsammans digitalt lärde mig inte bara tekniken - de förstår hur vi tänker. Inga dumma frågor här!",
-              achievement: "Nu hjälper han andra i sin bostadsförening",
-            },
-            {
-              name: "Ingrid",
-              age: "75 år",
-              quote: "Jag trodde aldrig jag skulle klara BankID. Nu köper jag till och med mina teåtarbiljetter online!",
-              achievement: "Använder 6 olika appar självständigt",
-            },
-          ],
+      testimonialsTitle: "Vad andra säger",
+      testimonials: [
+        {
+          name: "Karin",
+          age: "72 år",
+          quote: "Jag var livsrädd för telefonen förut. Nu Swishar jag till barnbarnen och videochattar varje vecka!",
+          achievement: "Genomförde 5 lektioner",
+        },
+        {
+          name: "Lars",
+          age: "68 år",
+          quote: "Tillsammans digitalt lärde mig inte bara tekniken - de förstår hur vi tänker. Inga dumma frågor här!",
+          achievement: "Nu hjälper han andra i sin bostadsförening",
+        },
+        {
+          name: "Ingrid",
+          age: "75 år",
+          quote: "Jag trodde aldrig jag skulle klara BankID. Nu köper jag till och med mina teåtarbiljetter online!",
+          achievement: "Använder 6 olika appar självständigt",
+        },
+      ],
     },
     about: {
       title: "Om Tillsammans digitalt",
@@ -515,22 +515,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       supportWeekend: "Lördag - Söndag: Stängt",
       supportNote: "E-post och chatt besvaras även utanför öppettider, men det kan ta lite längre tid.",
     },
-    lesson: {
-      notFoundTitle: "Lektion hittades inte",
-      backToLessons: "Tillbaka till lektioner",
-      congratsTitle: "Grattis!",
-      completedLessonPrefix: "Du har slutfört lektionen",
-      earnedLabel: "Du har tjänat",
-      moreLessons: "Fler lektioner",
-      seeProgress: "Se framsteg",
-      stepLabel: "Steg",
-      stepOf: "av",
-      showHint: "Visa tips",
-      hideHint: "Dölj tips",
-      previous: "Föregående",
-      next: "Nästa",
-      finish: "Avsluta",
-    },
     interactive: {
       phoneSimulator: {
         instruction: "Tryck på meddelanden-appen (den gröna med pratbubblan)",
@@ -601,18 +585,32 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   en: {
-    supportPopup: {
-      title: "Support us with Swish",
-      dontShow: "Don't show again",
-      close: "Close",
-    },
     lesson: {
+      notFoundTitle: "Lesson not found",
+      backToLessons: "Back to lessons",
+      congratsTitle: "Congratulations!",
+      completedLessonPrefix: "You completed the lesson:",
+      earnedLabel: "You earned:",
+      moreLessons: "More lessons",
+      seeProgress: "See progress",
+      stepLabel: "Step",
+      stepOf: "of",
+      showHint: "Show hint",
+      hideHint: "Hide hint",
+      previous: "Previous",
+      next: "Next",
+      nextStep: "Next step",
+      finish: "Finish",
       supportPopup: {
         title: "Support us with Swish",
         dontShow: "Don't show again",
         close: "Close",
       },
-      // ...existing lesson keys...
+    },
+    supportPopup: {
+      title: "Support us with Swish",
+      dontShow: "Don't show again",
+      close: "Close",
     },
     meta: {
       title: "Tillsammans digitalt - Learn digital skills at your pace",
@@ -669,27 +667,27 @@ const dictionaries: Record<Locale, Dictionary> = {
       ctaTitle: "Ready to take the first step?",
       ctaSubtitle: "Start today. Core access is always free.",
       ctaButton: "Start your journey",
-          testimonialsTitle: "What others say",
-          testimonials: [
-            {
-              name: "Karin",
-              age: "72 years old",
-              quote: "I was terrified of the phone before. Now I Swish money to grandkids and video chat every week!",
-              achievement: "Completed 5 lessons",
-            },
-            {
-              name: "Lars",
-              age: "68 years old",
-              quote: "Tillsammans digitalt didn't just teach me the tech - they understand how we think. No stupid questions here!",
-              achievement: "Now helps others in his housing association",
-            },
-            {
-              name: "Ingrid",
-              age: "75 years old",
-              quote: "I never thought I'd manage BankID. Now I even buy my theater tickets online!",
-              achievement: "Uses 6 different apps independently",
-            },
-          ],
+      testimonialsTitle: "What others say",
+      testimonials: [
+        {
+          name: "Karin",
+          age: "72 years old",
+          quote: "I was terrified of the phone before. Now I Swish money to grandkids and video chat every week!",
+          achievement: "Completed 5 lessons",
+        },
+        {
+          name: "Lars",
+          age: "68 years old",
+          quote: "Tillsammans digitalt didn't just teach me the tech - they understand how we think. No stupid questions here!",
+          achievement: "Now helps others in his housing association",
+        },
+        {
+          name: "Ingrid",
+          age: "75 years old",
+          quote: "I never thought I'd manage BankID. Now I even buy my theater tickets online!",
+          achievement: "Uses 6 different apps independently",
+        },
+      ],
     },
     about: {
       title: "About Tillsammans digitalt",
@@ -849,22 +847,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       supportWeekend: "Saturday - Sunday: Closed",
       supportNote: "Email and chat are answered outside office hours too, but it may take a bit longer.",
     },
-    lesson: {
-      notFoundTitle: "Lesson not found",
-      backToLessons: "Back to lessons",
-      congratsTitle: "Congratulations!",
-      completedLessonPrefix: "You completed the lesson:",
-      earnedLabel: "You earned:",
-      moreLessons: "More lessons",
-      seeProgress: "See progress",
-      stepLabel: "Step",
-      stepOf: "of",
-      showHint: "Show hint",
-      hideHint: "Hide hint",
-      previous: "Previous",
-      next: "Next",
-      finish: "Finish",
-    },
     interactive: {
       phoneSimulator: {
         instruction: "Tap the Messages app (the green one with a speech bubble)",
@@ -935,11 +917,33 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   ar: {
-        supportPopup: {
-          title: "ادعمنا عبر Swish",
-          dontShow: "لا تظهر مرة أخرى",
-          close: "إغلاق",
-        },
+    lesson: {
+      notFoundTitle: "الدرس غير موجود",
+      backToLessons: "العودة إلى الدروس",
+      congratsTitle: "تهانينا!",
+      completedLessonPrefix: "لقد أكملت الدرس:",
+      earnedLabel: "لقد ربحت:",
+      moreLessons: "دروس أكثر",
+      seeProgress: "عرض تقدمك",
+      stepLabel: "الخطوة",
+      stepOf: "من",
+      showHint: "إظهار تلميح",
+      hideHint: "إخفاء التلميح",
+      previous: "السابق",
+      next: "التالي",
+      nextStep: "الخطوة التالية",
+      finish: "إنهاء",
+      supportPopup: {
+        title: "ادعمنا عبر Swish",
+        dontShow: "لا تظهر مرة أخرى",
+        close: "إغلاق",
+      },
+    },
+    supportPopup: {
+      title: "ادعمنا عبر Swish",
+      dontShow: "لا تظهر مرة أخرى",
+      close: "إغلاق",
+    },
     meta: {
       title: "Tillsammans digitalt - تعلّم المهارات الرقمية على وتيرتك",
       description: "منصة آمنة وبسيطة لتعلّم التواصل الرقمي. بلا توتر، بلا مصطلحات معقدة، فقط دعم.",
@@ -995,27 +999,27 @@ const dictionaries: Record<Locale, Dictionary> = {
       ctaTitle: "جاهز للخطوة الأولى؟",
       ctaSubtitle: "ابدأ اليوم. الوصول الأساسي مجاني دائمًا.",
       ctaButton: "ابدأ رحلتك",
-          testimonialsTitle: "ماذا يقول الآخرون",
-          testimonials: [
-            {
-              name: "كارين",
-              age: "72 سنة",
-              quote: "كنت خائفة جدًا من الهاتف من قبل. الآن أرسل النقود عبر Swish للأحفاد وأتحدث بالفيديو كل أسبوع!",
-              achievement: "أكملت 5 دروس",
-            },
-            {
-              name: "لارس",
-              age: "68 سنة",
-              quote: "Tillsammans digitalt لم يعلمني التكنولوجيا فقط - إنهم يفهمون كيف نفكر. لا توجد أسئلة غبية هنا!",
-              achievement: "يساعد الآخرين في الجمعية الآن",
-            },
-            {
-              name: "إنغريد",
-              age: "75 سنة",
-              quote: "لم أعتقد أبدًا أنني سأتمكن من BankID. الآن حتى أشتري تذاكر المسرح عبر الإنترنت!",
-              achievement: "تستخدم 6 تطبيقات مختلفة بشكل مستقل",
-            },
-          ],
+      testimonialsTitle: "ماذا يقول الآخرون",
+      testimonials: [
+        {
+          name: "كارين",
+          age: "72 سنة",
+          quote: "كنت خائفة جدًا من الهاتف من قبل. الآن أرسل النقود عبر Swish للأحفاد وأتحدث بالفيديو كل أسبوع!",
+          achievement: "أكملت 5 دروس",
+        },
+        {
+          name: "لارس",
+          age: "68 سنة",
+          quote: "Tillsammans digitalt لم يعلمني التكنولوجيا فقط - إنهم يفهمون كيف نفكر. لا توجد أسئلة غبية هنا!",
+          achievement: "يساعد الآخرين في الجمعية الآن",
+        },
+        {
+          name: "إنغريد",
+          age: "75 سنة",
+          quote: "لم أعتقد أبدًا أنني سأتمكن من BankID. الآن حتى أشتري تذاكر المسرح عبر الإنترنت!",
+          achievement: "تستخدم 6 تطبيقات مختلفة بشكل مستقل",
+        },
+      ],
     },
     about: {
       title: "حول Tillsammans digitalt",
@@ -1070,8 +1074,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       statsTime: "الوقت المستغرق",
       overallProgress: "التقدم العام",
       achievements: "إنجازاتك",
-      achievementFirstTitle: "الخطوة الأولى",
-      achievementFirstDesc: "أكملت أول درس لك",
       achievementsEmpty: "أكمل الدروس لتحصل على إنجازات!",
       recentActivity: "النشاط الأخير",
       recentActivityEmpty: "لا يوجد نشاط بعد. ابدأ درسًا للانطلاق!",
@@ -1177,22 +1179,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       supportWeekend: "السبت - الأحد: مغلق",
       supportNote: "يتم الرد على البريد والدردشة خارج ساعات العمل أيضًا، لكن قد يستغرق الأمر وقتًا أطول.",
     },
-    lesson: {
-      notFoundTitle: "الدرس غير موجود",
-      backToLessons: "العودة إلى الدروس",
-      congratsTitle: "تهانينا!",
-      completedLessonPrefix: "لقد أكملت الدرس:",
-      earnedLabel: "لقد ربحت:",
-      moreLessons: "دروس أكثر",
-      seeProgress: "عرض تقدمك",
-      stepLabel: "الخطوة",
-      stepOf: "من",
-      showHint: "إظهار تلميح",
-      hideHint: "إخفاء التلميح",
-      previous: "السابق",
-      next: "التالي",
-      finish: "إنهاء",
-    },
     interactive: {
       phoneSimulator: {
         instruction: "اضغط على تطبيق الرسائل (الأخضر مع فقاعة الكلام)",
@@ -1263,11 +1249,33 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   ti: {
-        supportPopup: {
-          title: "Nefasitna Swish ብምምሕዳር",
-          dontShow: "ኣይትረኣየን እንደገና",
-          close: "ዝግብን",
-        },
+    lesson: {
+      notFoundTitle: "ትምህርት ኣይተረኽበን",
+      backToLessons: "ናብ ትምህርታት ተመለስ",
+      congratsTitle: "እንኳዕ ደስ ኣለካ!",
+      completedLessonPrefix: "ትምህርት ወዳእካ:",
+      earnedLabel: "ረኺብካ:",
+      moreLessons: "ተወሳኺ ትምህርታት",
+      seeProgress: "ምዕባለኻ ርእ",
+      stepLabel: "ደረጃ",
+      stepOf: "ካብ",
+      showHint: "ምክር ኣርእ",
+      hideHint: "ምክር ደቀን",
+      previous: "ቀዳማይ",
+      next: "ቀጻሊ",
+      nextStep: "ቀጻሊ ደረጃ",
+      finish: "ውዳእ",
+      supportPopup: {
+        title: "Nefasitna Swish ብምምሕዳር",
+        dontShow: "ኣይትረኣየን እንደገና",
+        close: "ዝግብን",
+      },
+    },
+    supportPopup: {
+      title: "Nefasitna Swish ብምምሕዳር",
+      dontShow: "ኣይትረኣየን እንደገና",
+      close: "ዝግብን",
+    },
     meta: {
       title: "Tillsammans digitalt - ብእርስካ ፍጥነት ዲጂታል ምምሃር",
       description: "ዲጂታል ግንኙነት ንምምሃር ደሓን እና ቀሊል መድረኽ። ጭንቀት የለን፣ መተሓሳሰቢ ቃላት የለን፣ ድጋፍ ብብቂ ኣሎ።",
@@ -1323,27 +1331,27 @@ const dictionaries: Record<Locale, Dictionary> = {
       ctaTitle: "ንመጀመርያ ደረጃ ደስ ኣለካ?",
       ctaSubtitle: "ዛሬ ጀምር። ቀንዲ ተበፃሒነት ኩሉ ጊዜ ነጻ እዩ።",
       ctaButton: "ጉዞኻ ጀምር",
-          testimonialsTitle: "ካልኦት እንታይ ይበሉ",
-          testimonials: [
-            {
-              name: "ካሪን",
-              age: "72 ዓመት",
-              quote: "ቀደም ካብ ቴክኖሎጂ ብጣዕሚ ፈራሒ ነይረ። ሐዚ ነቲ ኣሕጽናት Swish እገብር እና ነቲ መሐለተይ ምስሊ ኣንተሽካመ!",
-              achievement: "5 ትምህርቲ ወዲእካ",
-            },
-            {
-              name: "ላርስ",
-              age: "68 ዓመት",
-              quote: "ምስ ዝመሰለዚ እቲ ሕብረተ ዓለም ክንደይ መጠን ለውጢ ሓደገ። ሐዚ ከም Facebook ተጠቐምቲ ኣብ እገብር እና ቤተሰብ እትከታተል።",
-              achievement: "ቪዲዮ ጥሪ ምስ ኣሕጽናት",
-            },
-            {
-              name: "እንግሪድ",
-              age: "75 ዓመት",
-              quote: "ከም 1177 እገልግሎት ናይ ጥዕና ከም ዝተረደእኩዎ በጃኹም ኣብ አመስግን። ሐዚ ዶክተር ጊዜ ብነባርከ እንከየስ።",
-              achievement: "ስምዒታዊ BankID በባላይ",
-            },
-          ],
+      testimonialsTitle: "ካልኦት እንታይ ይበሉ",
+      testimonials: [
+        {
+          name: "ካሪን",
+          age: "72 ዓመት",
+          quote: "ቀደም ካብ ቴክኖሎጂ ብጣዕሚ ፈራሒ ነይረ። ሐዚ ነቲ ኣሕጽናት Swish እገብር እና ነቲ መሐለተይ ምስሊ ኣንተሽካመ!",
+          achievement: "5 ትምህርቲ ወዲእካ",
+        },
+        {
+          name: "ላርስ",
+          age: "68 ዓመት",
+          quote: "ምስ ዝመሰለዚ እቲ ሕብረተ ዓለም ክንደይ መጠን ለውጢ ሓደገ። ሐዚ ከም Facebook ተጠቐምቲ ኣብ እገብር እና ቤተሰብ እትከታተል።",
+          achievement: "ቪዲዮ ጥሪ ምስ ኣሕጽናት",
+        },
+        {
+          name: "እንግሪድ",
+          age: "75 ዓመት",
+          quote: "ከም 1177 እገልግሎት ናይ ጥዕና ከም ዝተረደእኩዎ በጃኹም ኣብ አመስግን። ሐዚ ዶክተር ጊዜ ብነባርከ እንከየስ።",
+          achievement: "ስምዒታዊ BankID በባላይ",
+        },
+      ],
     },
     about: {
       title: "ብዛዕባ Tillsammans digitalt",
@@ -1398,8 +1406,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       statsTime: "ዝተጠቐምካ ጊዜ",
       overallProgress: "ሓፈሻዊ ምዕባለ",
       achievements: "ስኬታትካ",
-      achievementFirstTitle: "ቀዳማይ ደረጃ",
-      achievementFirstDesc: "መጀመርያ ትምህርትካ ወዳእካ",
       achievementsEmpty: "ስኬት ንምርካብ ትምህርታት ወዳእ!",
       recentActivity: "ቀረባ እንቅስቃሴ",
       recentActivityEmpty: "ኣብዚ ጊዜ እንቅስቃሴ የለን። ንመጀመርያ ትምህርት ጀምር!",
@@ -1505,22 +1511,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       supportWeekend: "ቅዳሜ - እሑድ: ዝተዓጸወ",
       supportNote: "ኢ-መይልን ውይይትን ብዝኾነ ጊዜ ይመልስ እንተዘይኮነ ግን ጊዜ ሊሕዝ ይኽእል።",
     },
-    lesson: {
-      notFoundTitle: "ትምህርት ኣይተረኽበን",
-      backToLessons: "ናብ ትምህርታት ተመለስ",
-      congratsTitle: "እንኳዕ ደስ ኣለካ!",
-      completedLessonPrefix: "ትምህርት ወዳእካ:",
-      earnedLabel: "ረኺብካ:",
-      moreLessons: "ተወሳኺ ትምህርታት",
-      seeProgress: "ምዕባለኻ ርእ",
-      stepLabel: "ደረጃ",
-      stepOf: "ካብ",
-      showHint: "ምክር ኣርእ",
-      hideHint: "ምክር ደቀን",
-      previous: "ቀዳማይ",
-      next: "ቀጻሊ",
-      finish: "ውዳእ",
-    },
     interactive: {
       phoneSimulator: {
         instruction: "ኣብ ናይ መልእኽቲ መተግበሪ (ምስ ሓረግ ቃል) ጸቅጥ",
@@ -1591,11 +1581,33 @@ const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   fr: {
-        supportPopup: {
-          title: "Soutenez-nous avec Swish",
-          dontShow: "Ne plus afficher",
-          close: "Fermer",
-        },
+    lesson: {
+      notFoundTitle: "Leçon introuvable",
+      backToLessons: "Retour aux leçons",
+      congratsTitle: "Félicitations !",
+      completedLessonPrefix: "Vous avez terminé la leçon :",
+      earnedLabel: "Vous avez gagné :",
+      moreLessons: "Plus de leçons",
+      seeProgress: "Voir votre progression",
+      stepLabel: "Étape",
+      stepOf: "sur",
+      showHint: "Afficher l'astuce",
+      hideHint: "Cacher l'astuce",
+      previous: "Précédent",
+      next: "Suivant",
+      nextStep: "Étape suivante",
+      finish: "Terminer",
+      supportPopup: {
+        title: "Soutenez-nous avec Swish",
+        dontShow: "Ne plus afficher",
+        close: "Fermer",
+      },
+    },
+    supportPopup: {
+      title: "Soutenez-nous avec Swish",
+      dontShow: "Ne plus afficher",
+      close: "Fermer",
+    },
     meta: {
       title: "Tillsammans digitalt - Apprenez le numérique à votre rythme",
       description: "Une plateforme sûre et simple pour apprendre la communication numérique. Sans stress, sans jargon, juste du soutien.",
@@ -1659,27 +1671,27 @@ const dictionaries: Record<Locale, Dictionary> = {
       ctaTitle: "Prêt(e) à faire le premier pas ?",
       ctaSubtitle: "Commencez aujourd'hui. L'accès de base est toujours gratuit.",
       ctaButton: "Commencer votre parcours",
-          testimonialsTitle: "Ce que disent les autres",
-          testimonials: [
-            {
-              name: "Karin",
-              age: "72 ans",
-              quote: "J'étais terrifiée par le téléphone avant. Maintenant j'envoie de l'argent aux petits-enfants par Swish et je fais des appels vidéo chaque semaine!",
-              achievement: "A terminé 5 leçons",
-            },
-            {
-              name: "Lars",
-              age: "68 ans",
-              quote: "Tillsammans digitalt ne m'a pas seulement appris la technologie - ils comprennent comment nous pensons. Pas de questions stupides ici!",
-              achievement: "Aide maintenant d'autres dans son association",
-            },
-            {
-              name: "Ingrid",
-              age: "75 ans",
-              quote: "Je ne pensais jamais gérer BankID. Maintenant j'achète même mes billets de théâtre en ligne!",
-              achievement: "Utilise 6 applications différentes de manière indépendante",
-            },
-          ],
+      testimonialsTitle: "Ce que disent les autres",
+      testimonials: [
+        {
+          name: "Karin",
+          age: "72 ans",
+          quote: "J'étais terrifiée par le téléphone avant. Maintenant j'envoie de l'argent aux petits-enfants par Swish et je fais des appels vidéo chaque semaine!",
+          achievement: "A terminé 5 leçons",
+        },
+        {
+          name: "Lars",
+          age: "68 ans",
+          quote: "Tillsammans digitalt ne m'a pas seulement appris la technologie - ils comprennent comment nous pensons. Pas de questions stupides ici!",
+          achievement: "Aide maintenant d'autres dans son association",
+        },
+        {
+          name: "Ingrid",
+          age: "75 ans",
+          quote: "Je ne pensais jamais gérer BankID. Maintenant j'achète même mes billets de théâtre en ligne!",
+          achievement: "Utilise 6 applications différentes de manière indépendante",
+        },
+      ],
     },
     about: {
       title: "À propos de Tillsammans digitalt",
@@ -1734,8 +1746,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       statsTime: "Temps passé",
       overallProgress: "Progression globale",
       achievements: "Vos réussites",
-      achievementFirstTitle: "Premier pas",
-      achievementFirstDesc: "Vous avez terminé votre première leçon",
       achievementsEmpty: "Terminez des leçons pour gagner des réussites !",
       recentActivity: "Activité récente",
       recentActivityEmpty: "Aucune activité pour l'instant. Commencez une leçon pour démarrer !",
@@ -1840,22 +1850,6 @@ const dictionaries: Record<Locale, Dictionary> = {
       supportWeekdays: "Lundi - Vendredi : 9:00 - 17:00",
       supportWeekend: "Samedi - Dimanche : Fermé",
       supportNote: "Les emails et le chat sont aussi traités en dehors des horaires, mais cela peut prendre un peu plus de temps.",
-    },
-    lesson: {
-      notFoundTitle: "Leçon introuvable",
-      backToLessons: "Retour aux leçons",
-      congratsTitle: "Félicitations !",
-      completedLessonPrefix: "Vous avez terminé la leçon :",
-      earnedLabel: "Vous avez gagné :",
-      moreLessons: "Plus de leçons",
-      seeProgress: "Voir votre progression",
-      stepLabel: "Étape",
-      stepOf: "sur",
-      showHint: "Afficher l'astuce",
-      hideHint: "Cacher l'astuce",
-      previous: "Précédent",
-      next: "Suivant",
-      finish: "Terminer",
     },
     interactive: {
       phoneSimulator: {
